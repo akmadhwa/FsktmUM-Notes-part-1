@@ -53,7 +53,8 @@ The purpose of this is to standerdize all the file name and make the user easy t
     Please put your week number. If the Lecture note have many parts, put it in one folder
     #### Example
     ```
-    [Week 9] LogicProof Theory.pdf
+    [Week 09] LogicProof Theory.pdf
+    [Week 10] Gates.pdf
     ```
 
 1. ### Tutorial file Name
