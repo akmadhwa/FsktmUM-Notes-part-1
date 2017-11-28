@@ -40,40 +40,41 @@ FsktmUM Notes
     │   │   └───Tutorial
 
 ## Folder naming conventions
-The purpose of this is to standerdize all the file name and make the user easy to find the lecture notes.
+The purpose of this is to standardize all the file name and make the user easy to find the lecture notes.
 
 1. ### Subject Name
-    Make sure all the letters are uppercase and followed by the course code
+    Make sure all the letters are `UPPERCASE` and followed by the `Course Code`
     #### Example
     ```
     COMPUTER SYSTEMS AND ORGANIZATION (WIX1003)
     ```
 
 1. ### Lecture Notes file name
-    Please put your week number. If the Lecture note have many parts, put it in one folder
+    Please put your `week number`. If the Lecture note have many parts, put it in one folder
+
     #### Example
     ```
     [Week 09] LogicProof Theory.pdf
     [Week 10] Gates.pdf
     ```
-
-1. ### Tutorial file Name
-    Please put your week number. 
+    if you are not sure about which week
+    ```
+    [Week XX] Gates.pdf
+    ```
+1. ### Tutorial, Lab and Assignment file Name
+    Please put your `week number`. 
     #### Example
     ```
     [Week 09][Tutorial] LogicProof Theory.pdf
+    [Week 02][Assignment] Permutations.pdf
+    [Week 07][Lab] Object Oriented.pdf
     ```
     if the tutorial has answer
     ```
     [Week 09][Tutorial][Answer] LogicProof Theory.pdf
     ```
 
-1. ### Assignment file Name
-    Please put your week number. 
-    #### Example
-    ```
-    [Week 09][Assignment] LogicProof Theory.pdf
-    ```
+
 
 ## How to contribute
 1. Fork it!
