@@ -1,0 +1,31 @@
+Troubleshooting
+Disconnect cable and cucuk semula
+Tukar host adapter kepada 56.2
+
+Setting up DHCP pool
+
+conf t
+interface fa0/0
+ip address 192.168.56.2 255.255.255.0
+no shutdown
+exit
+line con 0
+logging synchronous
+exit
+ip dhcp pool mypool
+network 192.168.56.0 255.255.255.0
+domain-name mydomain.com
+default-router 192.168.56.2
+(takpayah) ip dhcp excluded-address 192.168.56.1 255.255.255.0
+(takpayah) ip dhcp excluded-address 192.168.56.2 255.255.255.0
+
+show ip dhcp server statistics
+show ip dhcp pool
+show ip dhcp binding
+show processes
+clear ip dhcp binding *
+
+start attacking
+
+sudo yersinia -G
+pick sending DISCOVER packet

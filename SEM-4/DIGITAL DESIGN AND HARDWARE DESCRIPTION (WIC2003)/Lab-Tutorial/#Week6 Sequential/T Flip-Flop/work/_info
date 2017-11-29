@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)
+Et_ff
+Z0 w1490166999
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week6 Sequential/T Flip-Flop
+Z4 8D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\#Week6 Sequential\T Flip-Flop\T_FF.vhd
+Z5 FD:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\#Week6 Sequential\T Flip-Flop\T_FF.vhd
+l0
+L4
+VUZC8f9X81Q@[QZK?DIfig3
+!s100 A4U_kEm=4oR`T0C?@VJfE3
+Z6 OV;C;10.4d;61
+32
+Z7 !s110 1490169011
+!i10b 1
+Z8 !s108 1490169011.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\#Week6 Sequential\T Flip-Flop\T_FF.vhd|
+Z10 !s107 D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\#Week6 Sequential\T Flip-Flop\T_FF.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1
+At_ff
+R1
+R2
+DEx4 work 4 t_ff 0 22 UZC8f9X81Q@[QZK?DIfig3
+l18
+L15
+VNW@l8_QU4]?Q[]MBf4RF:1
+!s100 LoW5e[Ib_c02iBz7Z3>=63
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Et_ff_tb
+Z13 w1490168996
+R1
+R2
+R3
+Z14 8D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\#Week6 Sequential\T Flip-Flop\T_FF_TB.vhd
+Z15 FD:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\#Week6 Sequential\T Flip-Flop\T_FF_TB.vhd
+l0
+L4
+V3cU;EI^bQgDUhg[Ub1hEd2
+!s100 ?D@cBKfgVi5Y04Rc>0Qdo2
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\#Week6 Sequential\T Flip-Flop\T_FF_TB.vhd|
+Z17 !s107 D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\#Week6 Sequential\T Flip-Flop\T_FF_TB.vhd|
+!i113 1
+R11
+R12
+Astimulus
+R1
+R2
+Z18 DEx4 work 7 t_ff_tb 0 22 3cU;EI^bQgDUhg[Ub1hEd2
+l24
+L7
+V:Oiz6<5ahNGC^47[ET`ao1
+!s100 @k`BfWMdKWC6`K16U75>A1
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12

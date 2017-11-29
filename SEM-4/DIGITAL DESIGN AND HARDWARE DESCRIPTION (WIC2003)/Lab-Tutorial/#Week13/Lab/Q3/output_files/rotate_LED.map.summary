@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon May 22 16:21:43 2017
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : rotate_LED
+Top-level Entity Name : rotate_LED_ALL
+Family : Cyclone IV E
+Total logic elements : 83
+    Total combinational functions : 77
+    Dedicated logic registers : 46
+Total registers : 46
+Total pins : 30
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

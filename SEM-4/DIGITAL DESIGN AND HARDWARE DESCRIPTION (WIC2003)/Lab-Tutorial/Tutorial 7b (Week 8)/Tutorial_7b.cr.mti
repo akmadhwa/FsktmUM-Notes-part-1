@@ -1,0 +1,94 @@
+{D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q3/funcAND.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q3/funcAND.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package logicpack
+-- Compiling entity funcAND
+-- Compiling architecture behavioral of funcAND
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converter.vhd} {0 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converter.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package conversions
+-- Compiling entity converter
+-- Compiling architecture behavior of converter
+** Error: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converter.vhd(28): Symbol "x1" has already been declared in this region.
+** Error: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converter.vhd(28): No feasible entries for subprogram "to_unsigned1".
+** Error: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converter.vhd(30): ** Error: (vcom-1590) Bad expression in left operand of infix expression '/'.
+
+** Error: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converter.vhd(30): Bad right hand side (infix expression) in variable assignment.
+** Error: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converter.vhd(32): ** Error: (vcom-1590) Bad expression in left operand of infix expression '-'.
+
+** Error: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converter.vhd(32): Bad right hand side (infix expression) in variable assignment.
+** Error: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converter.vhd(36): (vcom-1587) Label "x1" cannot be actual parameter
+
+** Error: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converter.vhd(36): Expecting FUNCTION call returning ieee.std_logic_1164.STD_ULOGIC_VECTOR where PROCEDURE call was found.
+** Error: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converter.vhd(43): VHDL Compiler exiting
+
+} {9.0 12.0 13.0 15.0 16.0 18.0 19.0 21.0} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/conversions.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/conversions.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package conversions
+-- Compiling package body conversions
+-- Loading package conversions
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q1/adder4conTB.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q1/adder4conTB.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity adder4conTB
+-- Compiling architecture stimulus of adder4conTB
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q1/adder4conTB.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q3/logicPack.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q3/logicPack.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package logicpack
+-- Compiling package body logicpack
+-- Loading package logicpack
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converterTB.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converterTB.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity converterTB
+-- Compiling architecture stimulus of converterTB
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converterTB.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converterTB.vhd(45): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converterTB.vhd(48): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converterTB.vhd(56): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converterTB.vhd(66): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converterTB.vhd(69): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converterTB.vhd(72): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converterTB.vhd(75): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converterTB.vhd(78): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converterTB.vhd(81): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converterTB.vhd(84): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converterTB.vhd(87): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q1/adder4con.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q1/adder4con.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity adder4con
+-- Compiling architecture behavior of adder4con
+
+} {} {}}

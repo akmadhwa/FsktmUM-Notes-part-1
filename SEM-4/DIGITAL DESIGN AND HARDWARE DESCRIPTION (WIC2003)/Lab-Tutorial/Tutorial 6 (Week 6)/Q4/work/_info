@@ -1,0 +1,182 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q3
+Esig
+Z0 w1490776680
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q4
+Z6 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q4/sig.vhd
+Z7 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q4/sig.vhd
+l0
+L5
+Vo0J37kimY=6ITXTQjAoK[0
+!s100 bLJf=?aaTYo=m@Vk8IVRa1
+Z8 OV;C;10.4d;61
+32
+Z9 !s110 1490777249
+!i10b 1
+Z10 !s108 1490777249.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q4/sig.vhd|
+Z12 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q4/sig.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1
+Asig
+R1
+R2
+R3
+R4
+DEx4 work 3 sig 0 22 o0J37kimY=6ITXTQjAoK[0
+l20
+L18
+V;VU]^FF?U7>=>:mojd@2c2
+!s100 ^YCCJOi541BXE6U:jW<<N2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Esigvar
+Z15 w1490777526
+R1
+R2
+R3
+R4
+R5
+Z16 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q4/sigvar.vhd
+Z17 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q4/sigvar.vhd
+l0
+L5
+VK[]PL=o4heS<HHz67BfHi0
+!s100 5K?Gl[D6DK5;iPS2EON[D1
+R8
+32
+Z18 !s110 1490777740
+!i10b 1
+Z19 !s108 1490777740.000000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q4/sigvar.vhd|
+Z21 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q4/sigvar.vhd|
+!i113 1
+R13
+R14
+Asigvar
+R1
+R2
+R3
+R4
+DEx4 work 6 sigvar 0 22 K[]PL=o4heS<HHz67BfHi0
+l21
+L19
+V]nbh5Lf:^aVkcNgnhFfHI2
+!s100 AKiA3JYad=Y;i6z_R?IWe2
+R8
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R13
+R14
+Esigvartb
+Z22 w1490777738
+R1
+R2
+R3
+R4
+R5
+Z23 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q4/sigvarTB.vhd
+Z24 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q4/sigvarTB.vhd
+l0
+L5
+V`_kU=4`5R1Hmg`9SH6J3A0
+!s100 ?^_4=h12ZCfdJLR[3RH[52
+R8
+32
+R18
+!i10b 1
+R19
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q4/sigvarTB.vhd|
+Z26 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q4/sigvarTB.vhd|
+!i113 1
+R13
+R14
+Astimulus
+R1
+R2
+R3
+R4
+Z27 DEx4 work 8 sigvartb 0 22 `_kU=4`5R1Hmg`9SH6J3A0
+l24
+L8
+V3kJEm@FeZa?`=e4cC_TiJ2
+!s100 g9NBjS^4<c;O>AVL_J=hc2
+R8
+32
+R18
+!i10b 1
+R19
+R25
+R26
+!i113 1
+R13
+R14
+Evar
+Z28 w1490776607
+R1
+R2
+R3
+R4
+R5
+Z29 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q4/var.vhd
+Z30 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q4/var.vhd
+l0
+L5
+VPnUCOL=@^Za=0PzWWzR7g3
+!s100 JAlcR6gGnB=?3B4QgWea61
+R8
+32
+R9
+!i10b 1
+R10
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q4/var.vhd|
+Z32 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q4/var.vhd|
+!i113 1
+R13
+R14
+Avar
+R1
+R2
+R3
+R4
+DEx4 work 3 var 0 22 PnUCOL=@^Za=0PzWWzR7g3
+l20
+L18
+Vn?Xi66AY]he@`5UNgG;el0
+!s100 E?FNK[7i<g_>^[N2f@?]>0
+R8
+32
+R9
+!i10b 1
+R10
+R31
+R32
+!i113 1
+R13
+R14

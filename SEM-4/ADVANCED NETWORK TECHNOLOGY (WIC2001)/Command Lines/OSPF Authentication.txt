@@ -1,0 +1,8 @@
+R1(config)#router ospf 1
+
+R1(config-router)#area 0 authentication message-digest 
+R1(config-router)#exit
+
+R1(config)#int s0/0/0
+R1(config-if)#ip ospf message-digest-key <key ID> md5 <OSPF password key, can use router name-router name, e.g. R1-R2>
+antara dua router yang connected antara interfaces, kena guna OSPF password key yang sama

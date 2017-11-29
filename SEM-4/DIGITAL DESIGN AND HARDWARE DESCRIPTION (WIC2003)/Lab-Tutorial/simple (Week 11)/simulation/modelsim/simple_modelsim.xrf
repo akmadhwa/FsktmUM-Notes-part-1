@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/simple (Week 11)/simple.vhd
+source_file = 1, c:/altera_lite/16.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera_lite/16.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera_lite/16.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera_lite/16.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/simple (Week 11)/db/simple.cbx.xml
+design_name = simple
+instance = comp, \S[0]~output\, S[0]~output, simple, 1
+instance = comp, \S[1]~output\, S[1]~output, simple, 1
+instance = comp, \S[2]~output\, S[2]~output, simple, 1
+instance = comp, \S[3]~output\, S[3]~output, simple, 1
+instance = comp, \A[0]~input\, A[0]~input, simple, 1
+instance = comp, \A[1]~input\, A[1]~input, simple, 1
+instance = comp, \A[2]~input\, A[2]~input, simple, 1
+instance = comp, \A[3]~input\, A[3]~input, simple, 1

@@ -1,0 +1,92 @@
+R1(config)#ip ips config location flash:ipsdir
+R1(config)#ip ips name iosips
+R1(config)#ip ips notif
+R1(config)#ip ips notify log
+R1(config)#serv
+R1(config)#service t
+R1(config)#service timestamps l
+R1(config)#service timestamps log d
+R1(config)#service timestamps log datetime ms
+R1(config)#service timestamps log datetime msec 
+R1(config)#logg
+R1(config)#logging 192.168.1.50
+R1(config)#ip ips
+R1(config)#ip ips sig
+R1(config)#ip ips signatu
+R1(config)#ip ips signature-ca
+R1(config)#ip ips signature-category 
+R1(config-ips-category)#cate
+R1(config-ips-category)#category all
+R1(config-ips-category-action)#reti
+R1(config-ips-category-action)#retired true
+R1(config-ips-category-action)#ca
+R1(config-ips-category-action)#cate
+R1(config-ips-category-action)#exit
+R1(config-ips-category)#ca
+R1(config-ips-category)#category ios_ips basic
+R1(config-ips-category-action)#retired false
+R1(config-ips-category-action)#exit
+R1(config-ips-category)#exit
+Do you want to accept these changes? [confirm]
+Applying Category configuration to signatures ...
+%IPS-6-ENGINE_BUILDING: atomic-ip - 288 signatures - 6 of 13 engines
+%IPS-6-ENGINE_READY: atomic-ip - build time 30 ms - packets for this engine will be scanned
+
+R1(config)#int g0/1
+R1(config-if)#ip ips iosips out
+R1(config-if)#
+*Mar 01, 00:06:15.066:  %IPS-6-ENGINE_BUILDS_STARTED:  00:06:15 UTC Mar 01 1993
+*Mar 01, 00:06:15.066:  %IPS-6-ENGINE_BUILDING: atomic-ip - 3 signatures - 1 of 13 engines
+*Mar 01, 00:06:15.066:  %IPS-6-ENGINE_READY: atomic-ip - build time 8 ms - packets for this engine will be scanned
+*Mar 01, 00:06:15.066:  %IPS-6-ALL_ENGINE_BUILDS_COMPLETE: elapsed time 8 ms
+R1(config-if)#
+R1(config-if)#exit
+R1(config)#ip ips
+R1(config)#ip ips sig
+R1(config)#ip ips signat
+R1(config)#ip ips signature0d
+R1(config)#ip ips signature-de
+R1(config)#ip ips signature-definition 
+R1(config-sigdef)#signatu
+R1(config-sigdef)#signature 2004 0
+R1(config-sigdef-sig)#status
+R1(config-sigdef-sig-status)#retired fa
+R1(config-sigdef-sig-status)#retired false 
+R1(config-sigdef-sig-status)#en
+R1(config-sigdef-sig-status)#enabled true
+R1(config-sigdef-sig-status)#engine
+R1(config-sigdef-sig-engine)#eve
+R1(config-sigdef-sig-engine)#event-action pro
+R1(config-sigdef-sig-engine)#event-action produce-alert 
+R1(config-sigdef-sig-engine)#ev
+R1(config-sigdef-sig-engine)#event-action deny packet-i
+R1(config-sigdef-sig-engine)#event-action deny packet-in
+R1(config-sigdef-sig-engine)#event-action deny-p
+R1(config-sigdef-sig-engine)#event-action deny-packet-inline 
+R1(config-sigdef-sig-engine)#eve
+R1(config-sigdef-sig-engine)#event-action reset
+R1(config-sigdef-sig-engine)#event-action reset-tc
+R1(config-sigdef-sig-engine)#event-action reset-tcp-c
+R1(config-sigdef-sig-engine)#event-action reset-tcp-conne
+R1(config-sigdef-sig-engine)#event-action ?
+  deny-packet-inline  Deny Packet
+  produce-alert       Produce Alert
+R1(config-sigdef-sig-engine)#event-action reset-tcp-connection
+                                          ^
+% Invalid input detected at '^' marker.
+	
+R1(config-sigdef-sig-engine)#exit
+R1(config-sigdef-sig)#exit
+R1(config-sigdef)#exit
+Do you want to accept these changes? [confirm]
+%IPS-6-ENGINE_BUILDS_STARTED:  
+%IPS-6-ENGINE_BUILDING: atomic-ip - 303 signatures - 3 of 13 engines
+%IPS-6-ENGINE_READY: atomic-ip - build time 480 ms - packets for this engine will be scanned
+%IPS-6-ALL_ENGINE_BUILDS_COMPLETE: elapsed time 648 ms
+
+R1(config)#
+R1(config)#
+*Mar 01, 00:09:16.099:  %IPS-4-SIGNATURE: Sig:2004 Subsig:0 Sev:25  [192.168.3.2 -> 192.168.1.2:0] RiskRating:25
+*Mar 01, 00:09:22.099:  %IPS-4-SIGNATURE: Sig:2004 Subsig:0 Sev:25  [192.168.3.2 -> 192.168.1.2:0] RiskRating:25
+*Mar 01, 00:09:28.099:  %IPS-4-SIGNATURE: Sig:2004 Subsig:0 Sev:25  [192.168.3.2 -> 192.168.1.2:0] RiskRating:25
+*Mar 01, 00:09:34.099:  %IPS-4-SIGNATURE: Sig:2004 Subsig:0 Sev:25  [192.168.3.2 -> 192.168.1.2:0] RiskRating:25

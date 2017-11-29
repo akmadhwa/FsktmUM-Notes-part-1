@@ -1,0 +1,6 @@
+en
+conf t
+int <def. gateway>
+standby <group number> ip <virtual ip>
+standby 1 priority 150
+standby 1 preempt <-- preempt jadikan active router

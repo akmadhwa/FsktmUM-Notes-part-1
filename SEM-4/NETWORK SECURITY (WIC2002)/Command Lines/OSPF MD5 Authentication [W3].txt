@@ -1,0 +1,9 @@
+Config OSPF MD5 authentication on routers
+
+R1(config)# router ospf <id>
+R1(config-router)# area <area num.> authentication message-digest
+----------------------
+Configure the MD5 key for all the routers in area
+
+R1(config)# int <fa, serial>
+R1(config-router)# ip ospf message-digest key <key> <algorithm type> <password>

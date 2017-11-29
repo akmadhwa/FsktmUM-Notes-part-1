@@ -1,0 +1,16 @@
+enables Cisco IOS image resilience, which hides the file from the dir command and show commands. The file cannot be viewed, copied, modified, or removed using EXEC mode commands. (It can be viewed in ROMMON mode.) When turned on for the first time, the running image is secured.
+
+R1(config)# secure boot-image
+
+---------------
+The secure boot-config command takes a snapshot of the router running configuration and securely archives it in persistent storage (flash).
+R1(config)# secure boot-config
+
+--------------------
+Disable the Resilient Configuration feature for the Cisco IOS image.
+R1# config t
+R1(config)# no secure boot-image
+-----------------------------
+Disable the Resilient Configuration feature for the running config file.
+R1(config)# no secure boot-config
+

@@ -1,0 +1,621 @@
+|AddSub8
+a[0] => XOR16bit:XOR16.c_in16[0]
+a[0] => Adder16:AddSub16.a16[0]
+a[1] => XOR16bit:XOR16.c_in16[1]
+a[1] => Adder16:AddSub16.a16[1]
+a[2] => XOR16bit:XOR16.c_in16[2]
+a[2] => Adder16:AddSub16.a16[2]
+a[3] => XOR16bit:XOR16.c_in16[3]
+a[3] => Adder16:AddSub16.a16[3]
+a[4] => XOR16bit:XOR16.c_in16[4]
+a[4] => Adder16:AddSub16.a16[4]
+a[5] => XOR16bit:XOR16.c_in16[5]
+a[5] => Adder16:AddSub16.a16[5]
+a[6] => XOR16bit:XOR16.c_in16[6]
+a[6] => Adder16:AddSub16.a16[6]
+a[7] => XOR16bit:XOR16.c_in16[7]
+a[7] => Adder16:AddSub16.a16[7]
+a[8] => XOR16bit:XOR16.c_in16[8]
+a[8] => Adder16:AddSub16.a16[8]
+a[9] => XOR16bit:XOR16.c_in16[9]
+a[9] => Adder16:AddSub16.a16[9]
+a[10] => XOR16bit:XOR16.c_in16[10]
+a[10] => Adder16:AddSub16.a16[10]
+a[11] => XOR16bit:XOR16.c_in16[11]
+a[11] => Adder16:AddSub16.a16[11]
+a[12] => XOR16bit:XOR16.c_in16[12]
+a[12] => Adder16:AddSub16.a16[12]
+a[13] => XOR16bit:XOR16.c_in16[13]
+a[13] => Adder16:AddSub16.a16[13]
+a[14] => XOR16bit:XOR16.c_in16[14]
+a[14] => Adder16:AddSub16.a16[14]
+a[15] => XOR16bit:XOR16.c_in16[15]
+a[15] => Adder16:AddSub16.a16[15]
+b[0] => ~NO_FANOUT~
+b[1] => ~NO_FANOUT~
+b[2] => ~NO_FANOUT~
+b[3] => ~NO_FANOUT~
+b[4] => ~NO_FANOUT~
+b[5] => ~NO_FANOUT~
+b[6] => ~NO_FANOUT~
+b[7] => ~NO_FANOUT~
+b[8] => ~NO_FANOUT~
+b[9] => ~NO_FANOUT~
+b[10] => ~NO_FANOUT~
+b[11] => ~NO_FANOUT~
+b[12] => ~NO_FANOUT~
+b[13] => ~NO_FANOUT~
+b[14] => ~NO_FANOUT~
+b[15] => ~NO_FANOUT~
+c_in => Adder16:AddSub16.c_in16
+c_in => XOR16bit:XOR16.b16[15]
+c_in => XOR16bit:XOR16.b16[14]
+c_in => XOR16bit:XOR16.b16[13]
+c_in => XOR16bit:XOR16.b16[12]
+c_in => XOR16bit:XOR16.b16[11]
+c_in => XOR16bit:XOR16.b16[10]
+c_in => XOR16bit:XOR16.b16[9]
+c_in => XOR16bit:XOR16.b16[8]
+c_in => XOR16bit:XOR16.b16[7]
+c_in => XOR16bit:XOR16.b16[6]
+c_in => XOR16bit:XOR16.b16[5]
+c_in => XOR16bit:XOR16.b16[4]
+c_in => XOR16bit:XOR16.b16[3]
+c_in => XOR16bit:XOR16.b16[2]
+c_in => XOR16bit:XOR16.b16[1]
+c_in => XOR16bit:XOR16.b16[0]
+sum[0] <= Adder16:AddSub16.sum16[0]
+sum[1] <= Adder16:AddSub16.sum16[1]
+sum[2] <= Adder16:AddSub16.sum16[2]
+sum[3] <= Adder16:AddSub16.sum16[3]
+sum[4] <= Adder16:AddSub16.sum16[4]
+sum[5] <= Adder16:AddSub16.sum16[5]
+sum[6] <= Adder16:AddSub16.sum16[6]
+sum[7] <= Adder16:AddSub16.sum16[7]
+sum[8] <= Adder16:AddSub16.sum16[8]
+sum[9] <= Adder16:AddSub16.sum16[9]
+sum[10] <= Adder16:AddSub16.sum16[10]
+sum[11] <= Adder16:AddSub16.sum16[11]
+sum[12] <= Adder16:AddSub16.sum16[12]
+sum[13] <= Adder16:AddSub16.sum16[13]
+sum[14] <= Adder16:AddSub16.sum16[14]
+sum[15] <= Adder16:AddSub16.sum16[15]
+c_out <= Adder16:AddSub16.c_out16
+
+
+|AddSub8|XOR16bit:XOR16
+c_in16[0] => XOR4bit:generate_i:0:XOR16_0.c_in4[0]
+c_in16[1] => XOR4bit:generate_i:0:XOR16_0.c_in4[1]
+c_in16[2] => XOR4bit:generate_i:0:XOR16_0.c_in4[2]
+c_in16[3] => XOR4bit:generate_i:0:XOR16_0.c_in4[3]
+c_in16[4] => XOR4bit:generate_i:1:XOR16_0.c_in4[0]
+c_in16[5] => XOR4bit:generate_i:1:XOR16_0.c_in4[1]
+c_in16[6] => XOR4bit:generate_i:1:XOR16_0.c_in4[2]
+c_in16[7] => XOR4bit:generate_i:1:XOR16_0.c_in4[3]
+c_in16[8] => XOR4bit:generate_i:2:XOR16_0.c_in4[0]
+c_in16[9] => XOR4bit:generate_i:2:XOR16_0.c_in4[1]
+c_in16[10] => XOR4bit:generate_i:2:XOR16_0.c_in4[2]
+c_in16[11] => XOR4bit:generate_i:2:XOR16_0.c_in4[3]
+c_in16[12] => XOR4bit:generate_i:3:XOR16_0.c_in4[0]
+c_in16[13] => XOR4bit:generate_i:3:XOR16_0.c_in4[1]
+c_in16[14] => XOR4bit:generate_i:3:XOR16_0.c_in4[2]
+c_in16[15] => XOR4bit:generate_i:3:XOR16_0.c_in4[3]
+b16[0] => XOR4bit:generate_i:0:XOR16_0.b4[0]
+b16[1] => XOR4bit:generate_i:0:XOR16_0.b4[1]
+b16[2] => XOR4bit:generate_i:0:XOR16_0.b4[2]
+b16[3] => XOR4bit:generate_i:0:XOR16_0.b4[3]
+b16[4] => XOR4bit:generate_i:1:XOR16_0.b4[0]
+b16[5] => XOR4bit:generate_i:1:XOR16_0.b4[1]
+b16[6] => XOR4bit:generate_i:1:XOR16_0.b4[2]
+b16[7] => XOR4bit:generate_i:1:XOR16_0.b4[3]
+b16[8] => XOR4bit:generate_i:2:XOR16_0.b4[0]
+b16[9] => XOR4bit:generate_i:2:XOR16_0.b4[1]
+b16[10] => XOR4bit:generate_i:2:XOR16_0.b4[2]
+b16[11] => XOR4bit:generate_i:2:XOR16_0.b4[3]
+b16[12] => XOR4bit:generate_i:3:XOR16_0.b4[0]
+b16[13] => XOR4bit:generate_i:3:XOR16_0.b4[1]
+b16[14] => XOR4bit:generate_i:3:XOR16_0.b4[2]
+b16[15] => XOR4bit:generate_i:3:XOR16_0.b4[3]
+c_out16[0] <= XOR4bit:generate_i:0:XOR16_0.c_out4[0]
+c_out16[1] <= XOR4bit:generate_i:0:XOR16_0.c_out4[1]
+c_out16[2] <= XOR4bit:generate_i:0:XOR16_0.c_out4[2]
+c_out16[3] <= XOR4bit:generate_i:0:XOR16_0.c_out4[3]
+c_out16[4] <= XOR4bit:generate_i:1:XOR16_0.c_out4[0]
+c_out16[5] <= XOR4bit:generate_i:1:XOR16_0.c_out4[1]
+c_out16[6] <= XOR4bit:generate_i:1:XOR16_0.c_out4[2]
+c_out16[7] <= XOR4bit:generate_i:1:XOR16_0.c_out4[3]
+c_out16[8] <= XOR4bit:generate_i:2:XOR16_0.c_out4[0]
+c_out16[9] <= XOR4bit:generate_i:2:XOR16_0.c_out4[1]
+c_out16[10] <= XOR4bit:generate_i:2:XOR16_0.c_out4[2]
+c_out16[11] <= XOR4bit:generate_i:2:XOR16_0.c_out4[3]
+c_out16[12] <= XOR4bit:generate_i:3:XOR16_0.c_out4[0]
+c_out16[13] <= XOR4bit:generate_i:3:XOR16_0.c_out4[1]
+c_out16[14] <= XOR4bit:generate_i:3:XOR16_0.c_out4[2]
+c_out16[15] <= XOR4bit:generate_i:3:XOR16_0.c_out4[3]
+
+
+|AddSub8|XOR16bit:XOR16|XOR4bit:\generate_i:3:XOR16_0
+c_in4[0] => oneXOR:generate_i:0:XOR4_0.c_in
+c_in4[1] => oneXOR:generate_i:1:XOR4_0.c_in
+c_in4[2] => oneXOR:generate_i:2:XOR4_0.c_in
+c_in4[3] => oneXOR:generate_i:3:XOR4_0.c_in
+b4[0] => oneXOR:generate_i:0:XOR4_0.b
+b4[1] => oneXOR:generate_i:1:XOR4_0.b
+b4[2] => oneXOR:generate_i:2:XOR4_0.b
+b4[3] => oneXOR:generate_i:3:XOR4_0.b
+c_out4[0] <= oneXOR:generate_i:0:XOR4_0.c_out
+c_out4[1] <= oneXOR:generate_i:1:XOR4_0.c_out
+c_out4[2] <= oneXOR:generate_i:2:XOR4_0.c_out
+c_out4[3] <= oneXOR:generate_i:3:XOR4_0.c_out
+
+
+|AddSub8|XOR16bit:XOR16|XOR4bit:\generate_i:3:XOR16_0|oneXOR:\generate_i:3:XOR4_0
+c_in => s.IN0
+c_in => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|XOR16bit:XOR16|XOR4bit:\generate_i:3:XOR16_0|oneXOR:\generate_i:2:XOR4_0
+c_in => s.IN0
+c_in => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|XOR16bit:XOR16|XOR4bit:\generate_i:3:XOR16_0|oneXOR:\generate_i:1:XOR4_0
+c_in => s.IN0
+c_in => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|XOR16bit:XOR16|XOR4bit:\generate_i:3:XOR16_0|oneXOR:\generate_i:0:XOR4_0
+c_in => s.IN0
+c_in => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|XOR16bit:XOR16|XOR4bit:\generate_i:2:XOR16_0
+c_in4[0] => oneXOR:generate_i:0:XOR4_0.c_in
+c_in4[1] => oneXOR:generate_i:1:XOR4_0.c_in
+c_in4[2] => oneXOR:generate_i:2:XOR4_0.c_in
+c_in4[3] => oneXOR:generate_i:3:XOR4_0.c_in
+b4[0] => oneXOR:generate_i:0:XOR4_0.b
+b4[1] => oneXOR:generate_i:1:XOR4_0.b
+b4[2] => oneXOR:generate_i:2:XOR4_0.b
+b4[3] => oneXOR:generate_i:3:XOR4_0.b
+c_out4[0] <= oneXOR:generate_i:0:XOR4_0.c_out
+c_out4[1] <= oneXOR:generate_i:1:XOR4_0.c_out
+c_out4[2] <= oneXOR:generate_i:2:XOR4_0.c_out
+c_out4[3] <= oneXOR:generate_i:3:XOR4_0.c_out
+
+
+|AddSub8|XOR16bit:XOR16|XOR4bit:\generate_i:2:XOR16_0|oneXOR:\generate_i:3:XOR4_0
+c_in => s.IN0
+c_in => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|XOR16bit:XOR16|XOR4bit:\generate_i:2:XOR16_0|oneXOR:\generate_i:2:XOR4_0
+c_in => s.IN0
+c_in => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|XOR16bit:XOR16|XOR4bit:\generate_i:2:XOR16_0|oneXOR:\generate_i:1:XOR4_0
+c_in => s.IN0
+c_in => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|XOR16bit:XOR16|XOR4bit:\generate_i:2:XOR16_0|oneXOR:\generate_i:0:XOR4_0
+c_in => s.IN0
+c_in => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|XOR16bit:XOR16|XOR4bit:\generate_i:1:XOR16_0
+c_in4[0] => oneXOR:generate_i:0:XOR4_0.c_in
+c_in4[1] => oneXOR:generate_i:1:XOR4_0.c_in
+c_in4[2] => oneXOR:generate_i:2:XOR4_0.c_in
+c_in4[3] => oneXOR:generate_i:3:XOR4_0.c_in
+b4[0] => oneXOR:generate_i:0:XOR4_0.b
+b4[1] => oneXOR:generate_i:1:XOR4_0.b
+b4[2] => oneXOR:generate_i:2:XOR4_0.b
+b4[3] => oneXOR:generate_i:3:XOR4_0.b
+c_out4[0] <= oneXOR:generate_i:0:XOR4_0.c_out
+c_out4[1] <= oneXOR:generate_i:1:XOR4_0.c_out
+c_out4[2] <= oneXOR:generate_i:2:XOR4_0.c_out
+c_out4[3] <= oneXOR:generate_i:3:XOR4_0.c_out
+
+
+|AddSub8|XOR16bit:XOR16|XOR4bit:\generate_i:1:XOR16_0|oneXOR:\generate_i:3:XOR4_0
+c_in => s.IN0
+c_in => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|XOR16bit:XOR16|XOR4bit:\generate_i:1:XOR16_0|oneXOR:\generate_i:2:XOR4_0
+c_in => s.IN0
+c_in => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|XOR16bit:XOR16|XOR4bit:\generate_i:1:XOR16_0|oneXOR:\generate_i:1:XOR4_0
+c_in => s.IN0
+c_in => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|XOR16bit:XOR16|XOR4bit:\generate_i:1:XOR16_0|oneXOR:\generate_i:0:XOR4_0
+c_in => s.IN0
+c_in => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|XOR16bit:XOR16|XOR4bit:\generate_i:0:XOR16_0
+c_in4[0] => oneXOR:generate_i:0:XOR4_0.c_in
+c_in4[1] => oneXOR:generate_i:1:XOR4_0.c_in
+c_in4[2] => oneXOR:generate_i:2:XOR4_0.c_in
+c_in4[3] => oneXOR:generate_i:3:XOR4_0.c_in
+b4[0] => oneXOR:generate_i:0:XOR4_0.b
+b4[1] => oneXOR:generate_i:1:XOR4_0.b
+b4[2] => oneXOR:generate_i:2:XOR4_0.b
+b4[3] => oneXOR:generate_i:3:XOR4_0.b
+c_out4[0] <= oneXOR:generate_i:0:XOR4_0.c_out
+c_out4[1] <= oneXOR:generate_i:1:XOR4_0.c_out
+c_out4[2] <= oneXOR:generate_i:2:XOR4_0.c_out
+c_out4[3] <= oneXOR:generate_i:3:XOR4_0.c_out
+
+
+|AddSub8|XOR16bit:XOR16|XOR4bit:\generate_i:0:XOR16_0|oneXOR:\generate_i:3:XOR4_0
+c_in => s.IN0
+c_in => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|XOR16bit:XOR16|XOR4bit:\generate_i:0:XOR16_0|oneXOR:\generate_i:2:XOR4_0
+c_in => s.IN0
+c_in => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|XOR16bit:XOR16|XOR4bit:\generate_i:0:XOR16_0|oneXOR:\generate_i:1:XOR4_0
+c_in => s.IN0
+c_in => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|XOR16bit:XOR16|XOR4bit:\generate_i:0:XOR16_0|oneXOR:\generate_i:0:XOR4_0
+c_in => s.IN0
+c_in => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|Adder16:AddSub16
+a16[0] => Adder4:generate_i:0:Adder16_0.a4[0]
+a16[1] => Adder4:generate_i:0:Adder16_0.a4[1]
+a16[2] => Adder4:generate_i:0:Adder16_0.a4[2]
+a16[3] => Adder4:generate_i:0:Adder16_0.a4[3]
+a16[4] => Adder4:generate_i:1:Adder16_0.a4[0]
+a16[5] => Adder4:generate_i:1:Adder16_0.a4[1]
+a16[6] => Adder4:generate_i:1:Adder16_0.a4[2]
+a16[7] => Adder4:generate_i:1:Adder16_0.a4[3]
+a16[8] => Adder4:generate_i:2:Adder16_0.a4[0]
+a16[9] => Adder4:generate_i:2:Adder16_0.a4[1]
+a16[10] => Adder4:generate_i:2:Adder16_0.a4[2]
+a16[11] => Adder4:generate_i:2:Adder16_0.a4[3]
+a16[12] => Adder4:generate_i:3:Adder16_0.a4[0]
+a16[13] => Adder4:generate_i:3:Adder16_0.a4[1]
+a16[14] => Adder4:generate_i:3:Adder16_0.a4[2]
+a16[15] => Adder4:generate_i:3:Adder16_0.a4[3]
+b16[0] => Adder4:generate_i:0:Adder16_0.b4[0]
+b16[1] => Adder4:generate_i:0:Adder16_0.b4[1]
+b16[2] => Adder4:generate_i:0:Adder16_0.b4[2]
+b16[3] => Adder4:generate_i:0:Adder16_0.b4[3]
+b16[4] => Adder4:generate_i:1:Adder16_0.b4[0]
+b16[5] => Adder4:generate_i:1:Adder16_0.b4[1]
+b16[6] => Adder4:generate_i:1:Adder16_0.b4[2]
+b16[7] => Adder4:generate_i:1:Adder16_0.b4[3]
+b16[8] => Adder4:generate_i:2:Adder16_0.b4[0]
+b16[9] => Adder4:generate_i:2:Adder16_0.b4[1]
+b16[10] => Adder4:generate_i:2:Adder16_0.b4[2]
+b16[11] => Adder4:generate_i:2:Adder16_0.b4[3]
+b16[12] => Adder4:generate_i:3:Adder16_0.b4[0]
+b16[13] => Adder4:generate_i:3:Adder16_0.b4[1]
+b16[14] => Adder4:generate_i:3:Adder16_0.b4[2]
+b16[15] => Adder4:generate_i:3:Adder16_0.b4[3]
+c_in16 => Adder4:generate_i:0:Adder16_0.c_in4
+sum16[0] <= Adder4:generate_i:0:Adder16_0.sum4[0]
+sum16[1] <= Adder4:generate_i:0:Adder16_0.sum4[1]
+sum16[2] <= Adder4:generate_i:0:Adder16_0.sum4[2]
+sum16[3] <= Adder4:generate_i:0:Adder16_0.sum4[3]
+sum16[4] <= Adder4:generate_i:1:Adder16_0.sum4[0]
+sum16[5] <= Adder4:generate_i:1:Adder16_0.sum4[1]
+sum16[6] <= Adder4:generate_i:1:Adder16_0.sum4[2]
+sum16[7] <= Adder4:generate_i:1:Adder16_0.sum4[3]
+sum16[8] <= Adder4:generate_i:2:Adder16_0.sum4[0]
+sum16[9] <= Adder4:generate_i:2:Adder16_0.sum4[1]
+sum16[10] <= Adder4:generate_i:2:Adder16_0.sum4[2]
+sum16[11] <= Adder4:generate_i:2:Adder16_0.sum4[3]
+sum16[12] <= Adder4:generate_i:3:Adder16_0.sum4[0]
+sum16[13] <= Adder4:generate_i:3:Adder16_0.sum4[1]
+sum16[14] <= Adder4:generate_i:3:Adder16_0.sum4[2]
+sum16[15] <= Adder4:generate_i:3:Adder16_0.sum4[3]
+c_out16 <= Adder4:generate_i:3:Adder16_0.c_out4
+
+
+|AddSub8|Adder16:AddSub16|Adder4:\generate_i:3:Adder16_0
+a4[0] => FA:generate_i:0:Adder4_0.a
+a4[1] => FA:generate_i:1:Adder4_0.a
+a4[2] => FA:generate_i:2:Adder4_0.a
+a4[3] => FA:generate_i:3:Adder4_0.a
+b4[0] => FA:generate_i:0:Adder4_0.b
+b4[1] => FA:generate_i:1:Adder4_0.b
+b4[2] => FA:generate_i:2:Adder4_0.b
+b4[3] => FA:generate_i:3:Adder4_0.b
+c_in4 => FA:generate_i:0:Adder4_0.c_in
+sum4[0] <= FA:generate_i:0:Adder4_0.s
+sum4[1] <= FA:generate_i:1:Adder4_0.s
+sum4[2] <= FA:generate_i:2:Adder4_0.s
+sum4[3] <= FA:generate_i:3:Adder4_0.s
+c_out4 <= FA:generate_i:3:Adder4_0.c_out
+
+
+|AddSub8|Adder16:AddSub16|Adder4:\generate_i:3:Adder16_0|FA:\generate_i:3:Adder4_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|Adder16:AddSub16|Adder4:\generate_i:3:Adder16_0|FA:\generate_i:2:Adder4_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|Adder16:AddSub16|Adder4:\generate_i:3:Adder16_0|FA:\generate_i:1:Adder4_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|Adder16:AddSub16|Adder4:\generate_i:3:Adder16_0|FA:\generate_i:0:Adder4_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|Adder16:AddSub16|Adder4:\generate_i:2:Adder16_0
+a4[0] => FA:generate_i:0:Adder4_0.a
+a4[1] => FA:generate_i:1:Adder4_0.a
+a4[2] => FA:generate_i:2:Adder4_0.a
+a4[3] => FA:generate_i:3:Adder4_0.a
+b4[0] => FA:generate_i:0:Adder4_0.b
+b4[1] => FA:generate_i:1:Adder4_0.b
+b4[2] => FA:generate_i:2:Adder4_0.b
+b4[3] => FA:generate_i:3:Adder4_0.b
+c_in4 => FA:generate_i:0:Adder4_0.c_in
+sum4[0] <= FA:generate_i:0:Adder4_0.s
+sum4[1] <= FA:generate_i:1:Adder4_0.s
+sum4[2] <= FA:generate_i:2:Adder4_0.s
+sum4[3] <= FA:generate_i:3:Adder4_0.s
+c_out4 <= FA:generate_i:3:Adder4_0.c_out
+
+
+|AddSub8|Adder16:AddSub16|Adder4:\generate_i:2:Adder16_0|FA:\generate_i:3:Adder4_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|Adder16:AddSub16|Adder4:\generate_i:2:Adder16_0|FA:\generate_i:2:Adder4_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|Adder16:AddSub16|Adder4:\generate_i:2:Adder16_0|FA:\generate_i:1:Adder4_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|Adder16:AddSub16|Adder4:\generate_i:2:Adder16_0|FA:\generate_i:0:Adder4_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|Adder16:AddSub16|Adder4:\generate_i:1:Adder16_0
+a4[0] => FA:generate_i:0:Adder4_0.a
+a4[1] => FA:generate_i:1:Adder4_0.a
+a4[2] => FA:generate_i:2:Adder4_0.a
+a4[3] => FA:generate_i:3:Adder4_0.a
+b4[0] => FA:generate_i:0:Adder4_0.b
+b4[1] => FA:generate_i:1:Adder4_0.b
+b4[2] => FA:generate_i:2:Adder4_0.b
+b4[3] => FA:generate_i:3:Adder4_0.b
+c_in4 => FA:generate_i:0:Adder4_0.c_in
+sum4[0] <= FA:generate_i:0:Adder4_0.s
+sum4[1] <= FA:generate_i:1:Adder4_0.s
+sum4[2] <= FA:generate_i:2:Adder4_0.s
+sum4[3] <= FA:generate_i:3:Adder4_0.s
+c_out4 <= FA:generate_i:3:Adder4_0.c_out
+
+
+|AddSub8|Adder16:AddSub16|Adder4:\generate_i:1:Adder16_0|FA:\generate_i:3:Adder4_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|Adder16:AddSub16|Adder4:\generate_i:1:Adder16_0|FA:\generate_i:2:Adder4_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|Adder16:AddSub16|Adder4:\generate_i:1:Adder16_0|FA:\generate_i:1:Adder4_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|Adder16:AddSub16|Adder4:\generate_i:1:Adder16_0|FA:\generate_i:0:Adder4_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|Adder16:AddSub16|Adder4:\generate_i:0:Adder16_0
+a4[0] => FA:generate_i:0:Adder4_0.a
+a4[1] => FA:generate_i:1:Adder4_0.a
+a4[2] => FA:generate_i:2:Adder4_0.a
+a4[3] => FA:generate_i:3:Adder4_0.a
+b4[0] => FA:generate_i:0:Adder4_0.b
+b4[1] => FA:generate_i:1:Adder4_0.b
+b4[2] => FA:generate_i:2:Adder4_0.b
+b4[3] => FA:generate_i:3:Adder4_0.b
+c_in4 => FA:generate_i:0:Adder4_0.c_in
+sum4[0] <= FA:generate_i:0:Adder4_0.s
+sum4[1] <= FA:generate_i:1:Adder4_0.s
+sum4[2] <= FA:generate_i:2:Adder4_0.s
+sum4[3] <= FA:generate_i:3:Adder4_0.s
+c_out4 <= FA:generate_i:3:Adder4_0.c_out
+
+
+|AddSub8|Adder16:AddSub16|Adder4:\generate_i:0:Adder16_0|FA:\generate_i:3:Adder4_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|Adder16:AddSub16|Adder4:\generate_i:0:Adder16_0|FA:\generate_i:2:Adder4_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|Adder16:AddSub16|Adder4:\generate_i:0:Adder16_0|FA:\generate_i:1:Adder4_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSub8|Adder16:AddSub16|Adder4:\generate_i:0:Adder16_0|FA:\generate_i:0:Adder4_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

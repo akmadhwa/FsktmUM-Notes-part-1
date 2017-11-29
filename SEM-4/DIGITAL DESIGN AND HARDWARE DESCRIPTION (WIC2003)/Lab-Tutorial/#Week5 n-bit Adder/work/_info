@@ -1,0 +1,170 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)
+Efa
+Z0 w1489562221
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder
+Z4 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/FA.vhd
+Z5 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/FA.vhd
+l0
+L4
+V`zH933E=BZnSOcX@icB6T1
+!s100 7HRKQhBQY3^coYCf^U][C3
+Z6 OV;C;10.4d;61
+32
+Z7 !s110 1489567494
+!i10b 1
+Z8 !s108 1489567494.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/FA.vhd|
+Z10 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/FA.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1
+Aadd
+R1
+R2
+DEx4 work 2 fa 0 22 `zH933E=BZnSOcX@icB6T1
+l14
+L12
+VT9dZN^:^G_CP=fSkJHdP`1
+!s100 ;fY0C@`dM[>1VcQ<8=SB40
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Enadder
+Z13 w1489563013
+R1
+R2
+R3
+Z14 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/nAdder.vhd
+Z15 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/nAdder.vhd
+l0
+L4
+VcLF_c3l0G33Q7;<97DW;H2
+!s100 Hk`197<1S^;F:cKe7d>][3
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/nAdder.vhd|
+Z17 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/nAdder.vhd|
+!i113 1
+R11
+R12
+Afulladd
+R1
+R2
+DEx4 work 6 nadder 0 22 cLF_c3l0G33Q7;<97DW;H2
+l29
+L16
+VNYz8:>UZ`TcoEG3bmFiO13
+!s100 l`ON@ZNa^4K5UQBZWQle]2
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Enadderstruct
+Z18 w1489566855
+R1
+R2
+R3
+Z19 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/nAdderStruct.vhd
+Z20 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/nAdderStruct.vhd
+l0
+L4
+V<i5`V4JJJ9P6::flB^12c3
+!s100 fnf?Zc[M4KEgUZh7Y1_I>1
+R6
+32
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/nAdderStruct.vhd|
+Z22 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/nAdderStruct.vhd|
+!i113 1
+R11
+R12
+Afulladd
+R1
+R2
+Z23 DEx4 work 12 nadderstruct 0 22 <i5`V4JJJ9P6::flB^12c3
+l28
+L15
+Z24 V[<g6n_QS8<Vb@]?0T1zBM2
+Z25 !s100 8L7;[LoL^T8fTVE`MmBW@3
+R6
+32
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Enaddertb
+Z26 w1489567487
+Z27 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z28 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R1
+R2
+R3
+Z29 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/nAdderTB.vhd
+Z30 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/nAdderTB.vhd
+l0
+L6
+VX?3_Id4O2>`TFm25ZeWdl2
+!s100 36IoZR]9ZKVW<_<Pho0Z[1
+R6
+32
+R7
+!i10b 1
+R8
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/nAdderTB.vhd|
+Z32 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/nAdderTB.vhd|
+!i113 1
+R11
+R12
+Astimulus
+R27
+R28
+R1
+R2
+DEx4 work 8 naddertb 0 22 X?3_Id4O2>`TFm25ZeWdl2
+l41
+L10
+VIK;a3ekQem7A_A6@[4c8?0
+!s100 LfN14`3kKRRDP5gbFOCkW0
+R6
+32
+R7
+!i10b 1
+R8
+R31
+R32
+!i113 1
+R11
+R12

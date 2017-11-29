@@ -1,0 +1,10 @@
+R1>en
+R1# conf t
+R1(config)# access-list <no.> remark <comment> <-- guna remark utk comment
+R1(config)# access-list <no.> permit <N Addr.> <wilcard> <-- permit network
+R1(config)# access-list deny any <--- guna any utk block lain2 network
+
+R1(config)# interface g0/1
+R3(config-if)# ip access-group <no.> in/out <--- in untuk packet yang menghala masuk, out utk menghala keluar
+
+//PENTING UNTUK PERMIT DULU, baru BLOCK!//

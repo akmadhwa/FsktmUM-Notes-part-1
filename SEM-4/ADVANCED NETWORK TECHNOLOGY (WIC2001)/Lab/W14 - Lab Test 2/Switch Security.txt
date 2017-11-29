@@ -1,0 +1,24 @@
+en
+conf t
+
+vlan 99
+name Native
+vlan 999
+name Blackhole
+
+int range
+switchport mode trunk
+switchport trunk native vlan 99
+
+int range
+switchport mode access
+switchport access vlan 999
+shutdown
+
+----------------------------
+nak activate port-security, matikan switchport mode dynamic
+int <int>
+switchport port-security 
+switchport port-security maximum <no. of MAC addr.>
+switchport port-security mac-address sticky
+switchport port-security violation shutdown/protect/restrict/shutdown

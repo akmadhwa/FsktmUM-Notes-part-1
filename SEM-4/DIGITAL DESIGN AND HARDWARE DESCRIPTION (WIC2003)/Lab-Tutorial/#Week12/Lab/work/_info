@@ -1,0 +1,166 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 8 (Week 9)
+Edec
+Z0 w1495442571
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week12/Lab
+Z4 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week12/Lab/DEC.vhd
+Z5 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week12/Lab/DEC.vhd
+l0
+L4
+VBIAJLe=P05YHH404=DQ520
+!s100 o1PUoc7HOif[S2R_He:`V0
+Z6 OV;C;10.4d;61
+32
+Z7 !s110 1495442687
+!i10b 1
+Z8 !s108 1495442687.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week12/Lab/DEC.vhd|
+Z10 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week12/Lab/DEC.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1
+Abehav
+R1
+R2
+DEx4 work 3 dec 0 22 BIAJLe=P05YHH404=DQ520
+l13
+L11
+V0[maQCW6VAo]PnSDBli^e3
+!s100 BM_A4a:m3NJkGd9;lJ3mc2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eledswitch
+Z13 w1495442458
+R1
+R2
+R3
+Z14 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week12/Lab/LEDswitch.vhd
+Z15 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week12/Lab/LEDswitch.vhd
+l0
+L4
+V_fm`9Dldk<1hNgV7gXz>j1
+!s100 UQYb9N:BYe[WidbJFShVN2
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week12/Lab/LEDswitch.vhd|
+Z17 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week12/Lab/LEDswitch.vhd|
+!i113 1
+R11
+R12
+Abehav
+R1
+R2
+DEx4 work 9 ledswitch 0 22 _fm`9Dldk<1hNgV7gXz>j1
+l42
+L14
+V9GnET=14UlHBNk<obX`jC3
+!s100 V9`l=8Ajn38^>i:KH]hSW2
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Emux4to1
+Z18 w1494805531
+R1
+R2
+R3
+Z19 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week12/Lab/mux4to1.vhd
+Z20 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week12/Lab/mux4to1.vhd
+l0
+L4
+V^;i1>lF0;3kCz[G<z@39g0
+!s100 `HGal74n;?5J<]6nWS_8H3
+R6
+32
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week12/Lab/mux4to1.vhd|
+Z22 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week12/Lab/mux4to1.vhd|
+!i113 1
+R11
+R12
+Abehav
+R1
+R2
+DEx4 work 7 mux4to1 0 22 ^;i1>lF0;3kCz[G<z@39g0
+l14
+L12
+VF7M6Y]bBao1hF=zmmib<J2
+!s100 R9c0nNITd832^mPH7oCj>2
+R6
+32
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Eseg7
+Z23 w1495442525
+R1
+R2
+R3
+Z24 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week12/Lab/Seg7.vhd
+Z25 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week12/Lab/Seg7.vhd
+l0
+L4
+VQ[0@aP_4b6BQaa_U>Qmfk2
+!s100 SLP@65LLoPMmV8UNckj?;3
+R6
+32
+R7
+!i10b 1
+R8
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week12/Lab/Seg7.vhd|
+Z27 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week12/Lab/Seg7.vhd|
+!i113 1
+R11
+R12
+Abehav
+R1
+R2
+Z28 DEx4 work 4 seg7 0 22 Q[0@aP_4b6BQaa_U>Qmfk2
+l14
+L12
+Z29 V3?8l4YhF1Q<FmUY:IJ[6U2
+Z30 !s100 cdoInWDcZg^MfF5SOdId61
+R6
+32
+R7
+!i10b 1
+R8
+R26
+R27
+!i113 1
+R11
+R12

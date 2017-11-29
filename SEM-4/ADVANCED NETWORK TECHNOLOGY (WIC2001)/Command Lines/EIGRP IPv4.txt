@@ -1,0 +1,58 @@
+R1(config)# router eigrp 10 <--- ini AS number, bukan ID
+R1(config-router)# network 10.1.1.0 0.0.0.3 <--- network address + wildcard
+R1(config-router)# network 192.168.1.0 0.0.0.255
+R1(config-router)# network 10.3.3.0 0.0.0.3
+R1(config-router)# network 10.3.3.0 <--- classful network address w/o wildcard
+
+Router(config-router)# redistribute static
+---------------------------
+modify bandwidth on the routers
+
+R1(config)# interface s0/0/0
+R1(config-if)# bandwidth 2000
+R1(config-if)# interface s0/0/1
+R1(config-if)# bandwidth 64
+
+--------------
+passive interface
+
+R1(config)# router eigrp 10
+R1(config-router)# passive-interface g0/0
+R1(config-router)# passive-interface default <--- semua interface jadi passive
+R1(config-router)# no passive-interface s0/0/0 <--- pengecualian dari default command
+
+-----------------
+disable automatic summarization/ advertisements should not be summarized
+
+R1(config-router)# no auto-summary
+
+--------------------
+configure hello interval
+
+R1(config-router)#int s0/0/0 <-- interface yang EIGRP
+R1(config-if)#ip hello-interval eigrp <AS num.> <hello-interval in seconds>
+
+---------------
+summary route
+
+R1(config)#int s0/0/0 <-- interface yang EIGRP
+R1(config-if)#ip summary-address eigrp <AS num> <network addr.> <subnet mask> 
+
+-----------------------
+authentication
+
+R1(config)#key chain <key-chain>
+R1(config-keychain)#key <id>
+R1(config-keychain-key)#key-string <key-string>
+
+int <int>
+ip authentication key-chain eigrp <AS num> <key-chain>
+ip authentication mode eigrp <AS-number> md5
+
+
+
+show ip eigrp neighbors
+show ip route eigrp
+show ip eigrp topology
+show ip protocols
+

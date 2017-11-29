@@ -1,0 +1,8 @@
+show spanning-tree
+show spanning-tree vlan <id>,<id>,<id>
+
+S1(config)# spanning-tree vlan 1,10,99 root primary/secondary - tukar root bridge untuk vlan jadi primary/secondary
+S1(config)#spanning-tree vlan 1 priority <values>
+
+
+

@@ -1,0 +1,17 @@
+router rip
+version 2
+network <network address>
+passive-interface <int.>
+
+--------------------------
+authentication
+
+int <int>
+ip rip authentication key-chain <name of key chain>
+ip rip authentication mode md5
+
+----------------------
+summary address
+
+int <int>
+ip summary-address rip 10.2.0.0 255.255.0.0

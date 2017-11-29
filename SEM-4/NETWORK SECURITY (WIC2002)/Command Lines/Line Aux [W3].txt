@@ -1,0 +1,4 @@
+R1(config)# line aux 0
+R1(config-line)# password ciscoauxpass
+R1(config-line)# exec-timeout 5 0
+R1(config-line)# login

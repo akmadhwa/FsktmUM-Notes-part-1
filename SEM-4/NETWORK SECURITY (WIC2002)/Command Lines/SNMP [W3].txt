@@ -1,0 +1,25 @@
+Simple Network Management Protocol (SNMP) enables network administrators to monitor network performance, mange network devices, and troubleshoot network problems. SNMPv3 provides secure access by authenticating and encrypting SNMP management packets over the network. 
+
+Configure an ACL on R1 that will restrict access to SNMP on the 192.168.1.0 LAN.
+Create a standard access-list named PERMIT-SNMP.
+R1(config)# ip access-list standard PERMIT-SNMP
+--------------------------
+Add a permit statement to allow only packets on R1’s LAN.
+R1(config-std-nacl)# permit 192.168.1.0 0.0.0.255
+R1(config-std-nacl)# exit
+
+------------------
+Configure a SNMP view called SNMP-RO to include the ISO MIB family.
+R1(config)# snmp-server view SNMP-RO iso included
+
+--------------------
+Call the group name SNMP-G1, and configure the group to use SNMPv3 and require both authentication and encryption by using the "priv" keyword. Associate the view you created in Step 2 to the group, giving it read only access with the read parameter. Finally specify the ACL PERMIT-SNMP, configured in Step 1, to restrict SNMP access to the local LAN.
+
+R1(config)# snmp-server group SNMP-G1 v3 priv read SNMP-RO access PERMIT-SNMP
+
+--------------------------
+Configure an SNMP-Admin user and associate the user to the SNMP-G1 group you configured in Step 3. Set the authentication method to SHA and the authentication password to Authpass. Use AES-128 for encryption with a password of Encrypass.
+R1(config)# snmp-server user SNMP-Admin SNMP-G1 v3 auth sha Authpass priv aes 128 Encrypass
+R1(config)# end
+
+

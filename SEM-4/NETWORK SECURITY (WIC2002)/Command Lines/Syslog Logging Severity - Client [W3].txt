@@ -1,0 +1,1 @@
+R1(config)# logging trap <nama level> <-- capture message yang reach level ni, level rendah tak akan dicapture

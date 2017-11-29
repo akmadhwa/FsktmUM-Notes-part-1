@@ -1,0 +1,38 @@
+R1(config-ext-nacl)#permit ip any any <---- permit other traffic
+-----------------------
+R1(config)#access-list 100 permit tcp 172.22.34.64 0.0.0.31 host 172.22.34.62 eq ftp <--- permit ftp
+R1(config)#access-list 100 permit icmp 172.22.34.64 0.0.0.31 host 172.22.34.62 <--- permit ping
+//by default, semua traffic is blocked
+
+R1(config)#int g0/0
+R1(config-if)#ip 
+R1(config-if)#ip acc
+R1(config-if)#ip access-group 100 in
+
+R1(config)#ip access-list extended HTTP_ONLY
+
+R1(config-ext-nacl)#permit tcp 172.22.34.96 0.0.0.15 host 172.22.34.62 eq www <--- permit web traffic/http
+R1(config-ext-nacl)#permit icmp 172.22.34.96 0.0.0.15 host 172.22.34.62 <---- permit ping
+R1(config-ext-nacl)#exit
+
+R1(config)#int g0/1
+R1(config-if)#ip acc
+R1(config-if)#ip access-group HTTP_ONLY in
+
+------------------
+RTA(config-ext-nacl)#permit tcp 10.101.117.32 0.0.0.15 10.101.117.0 0.0.0.31 eq 22 <--- permit SSH
+RTA(config-ext-nacl)#permit icmp any any <--- permit ping from any to any
+
+----------------
+
+R1(config)#ip access-list extended 120
+R1(config-ext-nacl)#permit icmp any any echo-reply <-- permit echo and echo-reply
+R1(config-ext-nacl)#permit icmp any any unreachable <--- permit unreachable message
+
+-------------
+
+R3(config-ext-nacl)#deny ip 10.0.0.0 0.255.255.255 any <--- private address
+R3(config-ext-nacl)#deny ip 172.16.0.0 0.15.255.255 any <--- private address
+R3(config-ext-nacl)#deny ip 192.168.0.0 0.0.255.255 any <--- private address
+R3(config-ext-nacl)#deny ip 127.0.0.0 0.255.255.255 any
+R3(config-ext-nacl)#deny ip 224.0.0.0 15.255.255.255 any <-- multicast address

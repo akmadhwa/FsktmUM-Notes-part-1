@@ -1,0 +1,5 @@
+R1(config)#ntp server 192.168.1.5 <--- NTP Server, config sebagai client
+R1(config)#ntp update-calendar <--- update hardware clock
+R1(config)#ntp authenticate
+R1(config)#ntp authentication-key 1 md5 NTPpa55 <--- password dari server
+R1(config)#ntp trusted-key 1 <--- key dari server

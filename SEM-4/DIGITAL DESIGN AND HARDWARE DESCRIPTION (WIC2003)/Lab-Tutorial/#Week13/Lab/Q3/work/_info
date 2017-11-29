@@ -1,0 +1,127 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week13/Lab
+Ecounter
+Z0 w1495006054
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week13/Lab/Q3
+Z4 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week13/Lab/Q3/counter.vhd
+Z5 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week13/Lab/Q3/counter.vhd
+l0
+L4
+V?8FjL8l7T<NBZIG>K?jLN3
+!s100 3l1hjR8LO@6`^IJ;`PMaD2
+Z6 OV;C;10.4d;61
+32
+Z7 !s110 1495441056
+!i10b 1
+Z8 !s108 1495441056.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week13/Lab/Q3/counter.vhd|
+Z10 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week13/Lab/Q3/counter.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1
+Abehav
+R1
+R2
+DEx4 work 7 counter 0 22 ?8FjL8l7T<NBZIG>K?jLN3
+l16
+L11
+V?1YdbW0GbK]Y[4^3D:fV^3
+!s100 >h3K]KK?`W?NcCcSb;hJh0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Erotate_led
+Z13 w1495440985
+R1
+R2
+R3
+Z14 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week13/Lab/Q3/rotate_LED.vhd
+Z15 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week13/Lab/Q3/rotate_LED.vhd
+l0
+L4
+Vn9dG6m9GXS;Xo:898^ghT1
+!s100 cE8BnZ`N>44aM0];>QYH=3
+R6
+32
+Z16 !s110 1495441057
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week13/Lab/Q3/rotate_LED.vhd|
+Z18 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week13/Lab/Q3/rotate_LED.vhd|
+!i113 1
+R11
+R12
+Abehav
+R1
+R2
+DEx4 work 10 rotate_led 0 22 n9dG6m9GXS;Xo:898^ghT1
+l23
+L15
+VW^5?JS_ka^2:U3::2I9l<1
+!s100 ni`TYDDJ=k:L@[_[fh>zR2
+R6
+32
+R16
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12
+Erotate_led_all
+Z19 w1495440968
+R1
+R2
+R3
+Z20 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week13/Lab/Q3/rotate_LED_ALL.vhd
+Z21 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week13/Lab/Q3/rotate_LED_ALL.vhd
+l0
+L4
+VZI6IDk?I3J6hcd[?Z3Ye60
+!s100 HVM<i>REkCPZdh<cB5R2K0
+R6
+32
+R16
+!i10b 1
+Z22 !s108 1495441057.000000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week13/Lab/Q3/rotate_LED_ALL.vhd|
+Z24 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week13/Lab/Q3/rotate_LED_ALL.vhd|
+!i113 1
+R11
+R12
+Abehav
+R1
+R2
+Z25 DEx4 work 14 rotate_led_all 0 22 ZI6IDk?I3J6hcd[?Z3Ye60
+l42
+L15
+Z26 VaoPVY6_:AGkHaZ54KLaV]1
+Z27 !s100 T`CG>`l<gT0g<VYQY1]QV3
+R6
+32
+R16
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R11
+R12

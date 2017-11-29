@@ -1,0 +1,57 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity shiftcon_b is
+port (
+	mode: in std_logic_vector (1 downto 0);
+	rst, d, clock: in std_logic;
+	q: out std_logic_vector (7 downto 0)
+	);
+end shiftcon_b;
+
+architecture behavioral of shiftcon_b is
+
+	signal s_Q: std_logic_vector(7 downto 0);
+	
+	begin
+		process (mode, clock, rst, d)
+			begin
+			
+				if mode="00" then -- shift logical right
+				
+					if rst='1' then
+						s_Q <= (others => '0');
+					elsif (clock='1' and clock'event) then
+						s_Q <= d & s_Q(7 downto 1);
+					end if;
+					
+				elsif mode = "01" then -- shift logical left
+				
+					if rst='1' then
+						s_Q <= (others => '0');
+					elsif (clock='1' and clock'event) then
+						s_Q <= s_Q(6 downto 0) & d;
+					end if;
+					
+				elsif mode = "10" then -- rotate right
+				
+					if rst='1' then
+						s_Q <= (others => '0');
+					elsif (clock='1' and clock'event) then
+						s_Q <= s_Q(0) & s_Q(7 downto 1);
+					end if;
+				
+				elsif mode = "11" then -- rotate left
+				
+					if rst='1' then
+						s_Q <= (others => '0');
+					elsif (clock='1' and clock'event) then
+						s_Q <= s_Q(6 downto 0) & s_Q(7);
+					end if;
+				
+				end if;
+		end process;
+			
+	Q<=s_Q;
+end behavioral;
+

@@ -1,0 +1,4 @@
+PC>SSH -l <username> <ip address>
+
+R2#ssh -v 2 -l SSHadmin 10.2.2.1
+R2#ssh -l SSHadmin 10.2.2.1

@@ -1,0 +1,34 @@
+R0 - DMZ
+
+en
+conf t
+ipv6 unicast-routing
+ipv6 access-list LAN1
+	permit ipv6 2001:133:61:20::/64 2001:133:61:10::/64
+	permit ipv6 2001:133:61:30::/64 2001:133:61:10::/64
+	end
+int g0/1
+	ipv6 traffic-filter LAN1 in
+	end
+---------------------------------
+
+R1 - Private Lan
+
+ipv6 access-list LAN2
+	permit ipv6 2001:133:61:30::/64 2001:133:61:20::/64
+	end
+int g0/1
+	ipv6 traffic-filter LAN2 in
+	end
+
+--------------------------------
+
+R1 - Data Center
+
+ipv6 access-list LAN3
+	permit ipv6 2001:133:61:10::/64 2001:133:61:30::/64
+	permit ipv6 2001:133:61:20::/64 2001:133:61:30::/64
+	end
+int g0/1
+	ipv6 traffic-filter LAN3 in
+	end

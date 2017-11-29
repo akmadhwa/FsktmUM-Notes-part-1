@@ -1,0 +1,17 @@
+R0
+
+en
+conf t
+int s0/0/0
+	encapsulation ppp
+	ppp authentication pap
+	exit
+
+R1
+
+en
+conf t
+int s0/0/0
+	encapsulation ppp
+	ppp authentication pap
+	exit

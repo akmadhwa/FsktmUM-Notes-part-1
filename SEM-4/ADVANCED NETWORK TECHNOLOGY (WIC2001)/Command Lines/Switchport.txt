@@ -1,0 +1,16 @@
+switch# show interface - Displays the interface configuration
+switch# show interface switchport - Displays information for all Ethernet interfaces, including access and trunk interfaces.
+switch# show interface brief - Displays interface configuration information
+
+contoh 
+
+switch# configure terminal
+switch(config)# interface ethernet 1/10
+switch(config-if)#no shut - digalakkan enable port sebelum tukar mode
+switch(config-if)# switchport mode access
+switch(config-if)# switchport access vlan 5 - pindah port masuk vlan
+----------
+trunk
+switch(config-if)# switchport mode trunk - jadi trunk
+switch(config-if)# switchport trunk native vlan - set native vlan untuk trunk
+switch(config-if)# switchport trunk allowed vlan <vlan list> <-- list of VLAns allowed on trunk link

@@ -1,0 +1,434 @@
+Building 1
+
+en
+conf t
+hostname Bldg-1
+no ip domain-lookup
+enable secret class
+service password-encryption
+line con 0
+password cisco
+login
+logging sync
+line vty 0 15
+password cisco
+login
+logging sync
+banner motd c Warning c
+exit
+banner motd c Warning c
+
+int s0/0/0
+ip ospf cost 7500
+bandwidth 128
+clock rate 128000
+ip address 192.168.100.21 255.255.255.252
+ip ospf message-digest-key 1 md5 xyz_OSPF
+ip ospf authentication message-digest
+no shutdown
+exit
+
+int g0/0
+ip address 192.168.8.1 255.255.255.0
+no shut
+
+int g0/1
+ip address 192.168.9.1 255.255.255.0
+no shut
+exit
+
+router ospf 1
+router-id 1.1.1.1
+network 192.168.8.0 0.0.0.255 area 1
+network 192.168.9.0 0.0.0.255 area 1
+network 192.168.100.20 0.0.0.3 area 0
+passive-interface g0/0
+passive-interface g0/1
+
+---------------
+Main
+
+en
+conf t
+hostname Main
+
+int s0/0/0
+ip ospf cost 7500
+clock rate 128000
+ip address 192.168.100.22 255.255.255.252
+ip ospf message-digest-key 1 md5 xyz_OSPF
+ip ospf authentication message-digest
+description Link to Building 1
+bandwidth 128
+no shutdown
+
+int s0/0/1
+ip ospf cost 7500
+clock rate 128000
+ip address 192.168.100.37 255.255.255.252
+ip ospf message-digest-key 1 md5 xyz_OSPF
+ip ospf authentication message-digest
+description Link to Building 2
+bandwidth 128
+no shutdown
+
+
+int s0/1/0
+clock rate 128000
+ip address 203.0.113.18 255.255.255.248
+description Link to ISP
+no shutdown
+exit
+
+ip route 0.0.0.0 0.0.0.0 s0/1/0
+
+router ospf 1
+router-id 2.2.2.2
+default-information originate
+network 192.168.100.20 0.0.0.3 area 0
+network 192.168.100.36 0.0.0.3 area 0
+passive-interface s0/1/0
+exit
+
+ip access-list standard telnetBlock <---- pay attention
+permit host 192.51.100.5
+exit
+
+line vty 0 15
+access-class telnetBlock in <---pay attention
+exit
+
+
+//pay attention to this one
+access-list 101 permit icmp host 192.168.100.5 any echo
+access-list 101 deny icmp any any echo
+access-list 101 permit ip any any
+
+int s0/1/0
+ip access-group 101 in
+exit
+
+---------------
+Building 2
+
+en
+conf t
+
+int s0/0/0
+clock rate 128000
+ip address 192.168.100.30 255.255.255.252
+no shut
+
+int s0/0/1
+clock rate 128000
+ip address 192.168.100.38 255.255.255.252
+ip ospf message-digest-key 1 md5 xyz_OSPF
+ip ospf authentication message-digest
+description Link to Building 2
+bandwidth 128
+no shut
+
+int g0/1
+no shut
+
+int g0/1.2
+encapsulation dot1q 2
+ip address 10.10.2.1 255.255.255.0
+no shut
+
+int g0/1.4
+encapsulation dot1q 4
+ip address 10.10.4.1 255.255.255.0
+no shut
+
+int g0/1.8
+encapsulation dot1q 8
+ip address 10.10.8.1 255.255.255.0
+no shut
+
+int g0/1.15
+encapsulation dot1q 15
+ip address 10.10.16.1 255.255.255.0
+no shut
+
+int g0/1.25
+encapsulation dot1q 25
+ip address 10.10.25.1 255.255.255.0
+no shut
+exit
+
+ip dhcp excluded-address 10.10.2.1 10.10.2.5
+ip dhcp excluded-address 10.10.4.1 10.10.4.5
+ip dhcp excluded-address 10.10.8.1 10.10.8.5
+
+ip dhcp pool vlan2pool
+network 10.10.2.0 255.255.255.0
+default-router 10.10.2.1
+dns-server 192.168.200.225
+exit
+
+ip dhcp pool vlan4pool
+network 10.10.4.0 255.255.255.0
+default-router 10.10.4.1
+dns-server 192.168.200.225
+exit
+
+ip dhcp pool vlan8pool
+network 10.10.8.0 255.255.255.0
+default-router 10.10.8.1
+dns-server 192.168.200.225
+exit
+
+router ospf 1
+router-id 3.3.3.3
+network 192.168.100.36 0.0.0.3 area 0
+network 10.10.2.0 0.0.0.255 area 2
+network 10.10.4.0 0.0.0.255 area 2
+network 10.10.8.0 0.0.0.255 area 2
+network 10.10.15.0 0.0.0.255 area 2
+passive-interface g0/1.2
+passive-interface g0/1.4
+passive-interface g0/1.8
+passive-interface g0/1.15
+exit
+
+access-list 1 permit 10.10.15.0 0.0.0.255
+interface g0/1.25
+ip access-group 1 out
+exit
+
+-----------------------
+FL-A
+
+en
+conf t
+hostname FL-A
+
+vlan 2
+name dept1
+vlan 4
+name dept2
+vlan 8
+name dept3
+vlan 15
+name NetAdmin
+vlan 25
+name manage
+vlan 99
+name safe
+exit
+
+int range f0/1-2
+switchport mode trunk
+channel-group 1 mode active
+no shut
+exit
+
+int range f0/3-4
+switchport mode trunk
+channel-group 2 mode active
+no shut
+exit
+
+int f0/5
+switchport mode access
+switchport access vlan 2
+no shut
+exit
+
+int f0/10
+switchport mode access
+switchport access vlan 4
+no shut
+exit
+
+int f0/15
+switchport mode access
+switchport access vlan 8
+no shut
+exit
+
+int f0/24
+switchport mode access
+switchport access vlan 15
+no shut
+exit
+
+int vlan 25
+ip address 10.10.25.254 255.255.255.0
+no shut
+exit
+
+ip default-gateway 10.10.25.1
+spanning-tree mode rapid-pvst
+spanning-tree vlan 2,4 root primary
+spanning-tree vlan 8,15 root secondary
+
+int range fa0/6-9, fa0/11-14, fa0/16-23, g0/1-2
+shutdown
+switchport mode access
+switchport access vlan 99
+exit
+
+
+int range fa0/5, fa0/10, fa0/15, fa0/24
+switchport port-security
+switchport port-security maximum 2
+switchport port-security mac-address sticky
+switchport port-security violation restrict
+exit
+
+--------------------------------
+FL-B
+
+en
+conf t
+hostname FL-B
+
+vlan 2
+name dept1
+vlan 4
+name dept2
+vlan 8
+name dept3
+vlan 15
+name NetAdmin
+vlan 25
+name manage
+vlan 99
+name safe
+exit
+
+int range fa0/1-2
+switchport mode trunk
+channel-group 1 mode active
+no shut
+exit
+
+int range fa0/3-4
+switchport mode trunk
+channel-group 2 mode active
+no shut
+exit
+
+int range fa0/5-6
+switchport mode trunk
+channel-group 3 mode active
+no shut
+exit
+
+int g0/1
+switchport mode trunk
+no shut
+exit
+
+int vlan 25
+ip address 10.10.25.253 255.255.255.0
+no shut
+exit
+
+ip default-gateway 10.10.25.1
+ip domain-name ccnaPTSA.com
+crypto key generate rsa
+1024
+ip ssh version 2
+line vty 0 15
+transport input ssh
+login local
+exit
+username netadmin secret SSHsecret9
+
+spanning-tree mode rapid-pvst
+
+--------------------------
+FL-C
+
+en
+conf t
+hostname FL-C
+
+vlan 2
+name dept1
+vlan 4
+name dept2
+vlan 8
+name dept3
+vlan 15
+name NetAdmin
+vlan 25
+name manage
+vlan 99
+name safe
+exit
+
+int range fa0/1-2
+switchport mode trunk
+channel-group 1 mode active
+no shut
+exit
+
+int range fa0/3-4
+switchport mode trunk
+channel-group 2 mode active
+no shut
+exit
+
+int range fa0/5-6
+switchport mode trunk
+channel-group 3 mode passive
+no shut
+exit
+
+int range fa0/10, fa0/15, fa0/24
+no shut
+exit
+
+int fa0/7
+switchport mode access
+switchport access vlan 2
+no shut
+exit
+
+int fa0/10
+switchport mode access
+switchport access vlan 4
+no shut
+exit
+
+int fa0/15
+switchport mode access
+switchport access vlan 8
+no shut
+exit
+
+int fa0/24
+switchport mode access
+switchport access vlan 15
+no shut
+exit
+
+int vlan 25
+ip address 10.10.25.252 255.255.255.0
+no shut
+exit
+
+ip default-gateway 10.10.25.1
+spanning-tree mode rapid-pvst
+spanning-tree vlan 8,15 root primary
+spanning-tree vlan 2,4 root secondary
+
+int range fa0/7, fa0/10, fa0/15, fa0/24
+spanning-tree portfast
+spanning-tree bpduguard enable
+exit
+
+-----------------------------------
+internal PC hosts
+
+config as DHCP clients
+
+assign static IPv4 addresses to
+- NetAdmin1 NIC 10.10.15.2/24 GW 10.10.15.1 DNS 192.168.200.225
+- NetAdmin2 NIC 10.10.15.3/24 GW 10.10.15.1 DNS 192.168.200.225
+- Lab A-1 IP: 192.168.8.2/24 GW 192.168.8.1 DNS 192.168.200.225
+- Lab B-2 IP: 192.168.9.2/24 GW 192.168.9.1 DNS 192.168.200.225

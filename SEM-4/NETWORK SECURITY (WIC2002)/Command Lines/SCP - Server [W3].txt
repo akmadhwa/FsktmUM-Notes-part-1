@@ -1,0 +1,4 @@
+R1(config)# ip scp server enable
+---------------
+Save the running configuration on R1 to a file on flash called R1-Config.
+R1# copy running-config R1-Config

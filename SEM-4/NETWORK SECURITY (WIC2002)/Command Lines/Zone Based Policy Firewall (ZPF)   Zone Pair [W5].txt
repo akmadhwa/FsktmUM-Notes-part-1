@@ -1,0 +1,41 @@
+1. buat zone
+2. buat ACL
+3. buat class-map
+4. buat policy-map, attach class-map kepada PM
+5. buat zone pairing
+6. masukkan interface ke dalam zone
+-------------------------
+buat zone
+
+R3(config)#zone security <zone name>
+R3(config-sec-zone)#exit
+----------------------------------
+R3(config)#access-list 101 permit ip 192.168.3.0 0.0.0.255 any
+--------------------------------
+attach class-map kepada ACL
+
+R3(config)#class-map type inspect match-all <class-map name>
+R3(config-cmap)#match access-group 101
+
+-----------------------------
+attach class map kepada policy map
+
+R3(config)#policy-map type inspect <policy-map>
+R3(config-pmap)#class type inspect <class-map>
+R3(config-pmap-c)#inspect
+
+---------------------------------
+create pair source dan destination
+
+R3(config)#zone-pair security <nama zone pair, e.g. IN-2-OUT-ZPAIR> source <nama source zone> destination <nama dest. zone>
+R3(config-sec-zone-pair)#service-policy type inspect <policy-map>
+R3(config-sec-zone-pair)#exit
+
+-----------------------
+masukkan interface ke dalam zone
+
+R3(config)#int g0/1
+R3(config-if)#zone-member security IN-ZONE
+
+R3(config-if)#int s0/0/1
+R3(config-if)#zone-member security OUT-ZONE

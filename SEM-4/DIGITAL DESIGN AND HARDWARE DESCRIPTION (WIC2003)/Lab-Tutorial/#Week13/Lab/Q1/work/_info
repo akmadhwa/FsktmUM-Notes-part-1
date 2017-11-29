@@ -1,0 +1,49 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week12/Lab
+Ecounter
+Z0 w1494822757
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week13/Lab
+Z4 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week13/Lab/counter.vhd
+Z5 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week13/Lab/counter.vhd
+l0
+L4
+VzEecH0PRKmm<:`8DH@IO>2
+!s100 4>AUF>?@cGZg_bi;1IgF^1
+Z6 OV;C;10.4d;61
+32
+Z7 !s110 1494822846
+!i10b 1
+Z8 !s108 1494822846.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week13/Lab/counter.vhd|
+Z10 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week13/Lab/counter.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1
+Abehav
+R1
+R2
+DEx4 work 7 counter 0 22 zEecH0PRKmm<:`8DH@IO>2
+l17
+L12
+VzRD@`nnOb?K^;dA8M<0Gf3
+!s100 2e0PX@WQAJA@YkjCLTNdi1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12

@@ -1,0 +1,1 @@
+ip route <destination network addr.> <subnet mask> <ip of next hop>

@@ -1,0 +1,44 @@
+R1(config)# ipv6 unicast-routing <--- enable ipv6 routing
+
+R1(config)# ipv6 router eigrp 1
+R1(config-rtr)# eigrp router-id 1.1.1.1 <--- router ID
+R1(config-rtr)# no shutdown
+
+
+R1(config)# interface g0/0
+R1(config-if)# ipv6 eigrp 1 <--- assign on interface that participate in EIGRP routing
+
+---------------
+passive-interface
+
+R1(config)# ipv6 router eigrp 1
+R1(config-rtr)# passive-interface g0/0
+R3(config-rtr)# passive-interface default <--- config all interface as passive
+
+----------------------------------
+summary route
+
+R3(config-rtr)#int s0/0/0 <-- int that participates in EIGRP
+R3(config-if)#ipv6 summary-address eigrp 1 2001:DB8:1:1:a::/68 <network address/subnet>
+
+-------------------------
+hello interval
+IPv6-Edge(config)#int <int name> <--- int that participates in EIGRP
+IPv6-Edge(config-if)#ipv6 hello-interval eigrp 1 10
+
+-------------------------
+authentication
+
+key chain <key-chain>
+key <id>
+key-string <key-string>
+
+int <int>
+ipv6 authentication mode eigrp <AS num> md5
+ipv6 authentication key-chain eigrp <AS num> <key-chain>
+
+----------------------
+
+show ipv6 route eigrp
+show ipv6 eigrp topology
+show ipv6 protocols

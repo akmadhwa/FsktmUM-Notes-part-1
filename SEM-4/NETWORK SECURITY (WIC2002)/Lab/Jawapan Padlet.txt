@@ -1,0 +1,31 @@
+Q1. A private key
+
+Q2. PKI
+
+Q3.  Integrity
+
+Q4. 3DES and AES
+
+Q5. a) and e)
+
+Q6. Secure Hash
+
+
+Q7. Symmetric encryption algorithms use pre-shared keys. Asymmetric encryption algorithms use different keys to encrypt and decrypt data.
+
+
+Q8. nonrepudiation of the transaction
+
+
+Q9. to generate a shared secret between two hosts that have not communicated before
+
+
+Q10. Integrity
+
+Q12. To provide authentication
+
+Q13. Man in the middle
+
+Q14. Digital certificates and certificate authority
+
+Q15. defend the castle

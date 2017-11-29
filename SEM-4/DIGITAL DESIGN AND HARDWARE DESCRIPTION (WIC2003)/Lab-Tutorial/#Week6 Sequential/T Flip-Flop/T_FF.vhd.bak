@@ -1,0 +1,34 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity T_FF is
+
+	port (
+		r, t, clk: in std_logic;
+		q: out std_logic
+	
+	);
+
+end T_FF;
+
+architecture T_FF of T_FF is
+signal s_q: std_logic;
+
+	begin
+		process (r, t, clk)
+			begin
+				
+				if (r = '1') then
+					s_q <= NOT(r);
+				elsif (clk = '1' AND clk'event) then
+					if(t = '1') then
+						s_q <= NOT s_q;
+					else
+						s_q <= s_q;
+			
+				end if;
+		
+		end process;
+
+
+end T_FF;

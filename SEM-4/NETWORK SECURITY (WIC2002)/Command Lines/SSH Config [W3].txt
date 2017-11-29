@@ -1,0 +1,10 @@
+R3(config)# ip domain-name ccnasecurity.com
+R3(config)# crypto key generate rsa 1024
+R3(config)#line vty 0 15
+R3(config-line)#trans
+R3(config-line)#transport input ssh
+R3(config-line)#login local
+R3(config-line)#exit
+R3(config)#ip ssh authentication-retries 2
+R3(config)#ip ssh time-out 90
+R3(config)#ip ssh version 2

@@ -1,0 +1,20 @@
+Enable AAA on R1 and configure AAA authentication for the console login to use the local database
+
+R1(config)#aaa new-model
+R1(config)#aaa authentication login default local
+----------------
+Enable AAA on R1 and configure AAA authentication for the console login to use the default method list.
+
+R1(config)#line console 0
+R1(config-line)#login authentication default
+
+----------------------
+Configure a named list called SSH-LOGIN to authenticate logins using local AAA
+R1(config)#aaa authentication login SSH-LOGIN local <--- use local username authentication
+------------------------
+Configure the vty lines to use the named AAA method and only allow SSH for remote access.
+R1(config)#line vty 0 4
+R1(config-line)#login authentication SSH-LOGIN
+R1(config-line)#transport input ssh
+
+

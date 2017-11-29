@@ -1,0 +1,3 @@
+R1(config)# line console 0 / vty <num> <num>
+R1(config-line)# login local <--- use local username
+R1(config-line)# end

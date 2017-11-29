@@ -1,0 +1,17 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ledr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clock_50",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

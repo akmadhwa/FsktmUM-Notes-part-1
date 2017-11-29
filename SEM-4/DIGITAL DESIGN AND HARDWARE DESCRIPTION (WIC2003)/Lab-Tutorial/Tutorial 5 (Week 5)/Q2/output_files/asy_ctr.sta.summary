@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1000mV 85C Model Setup 'clk'
+Slack : -0.797
+TNS   : -0.797
+
+Type  : Slow 1000mV 85C Model Setup 't_ff:\generate_n:1:FF|s_q'
+Slack : -0.533
+TNS   : -0.533
+
+Type  : Slow 1000mV 85C Model Setup 't_ff:\generate_n:0:FF|s_q'
+Slack : -0.392
+TNS   : -0.392
+
+Type  : Slow 1000mV 85C Model Setup 't_ff:\generate_n:2:FF|s_q'
+Slack : -0.020
+TNS   : -0.020
+
+Type  : Slow 1000mV 85C Model Hold 't_ff:\generate_n:0:FF|s_q'
+Slack : 0.397
+TNS   : 0.000
+
+Type  : Slow 1000mV 85C Model Hold 'clk'
+Slack : 0.523
+TNS   : 0.000
+
+Type  : Slow 1000mV 85C Model Hold 't_ff:\generate_n:2:FF|s_q'
+Slack : 0.570
+TNS   : 0.000
+
+Type  : Slow 1000mV 85C Model Hold 't_ff:\generate_n:1:FF|s_q'
+Slack : 0.641
+TNS   : 0.000
+
+Type  : Slow 1000mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -4.763
+
+Type  : Slow 1000mV 85C Model Minimum Pulse Width 't_ff:\generate_n:0:FF|s_q'
+Slack : -1.763
+TNS   : -1.763
+
+Type  : Slow 1000mV 85C Model Minimum Pulse Width 't_ff:\generate_n:1:FF|s_q'
+Slack : -1.763
+TNS   : -1.763
+
+Type  : Slow 1000mV 85C Model Minimum Pulse Width 't_ff:\generate_n:2:FF|s_q'
+Slack : -1.763
+TNS   : -1.763
+
+Type  : Slow 1000mV 0C Model Setup 'clk'
+Slack : -0.606
+TNS   : -0.606
+
+Type  : Slow 1000mV 0C Model Setup 't_ff:\generate_n:1:FF|s_q'
+Slack : -0.460
+TNS   : -0.460
+
+Type  : Slow 1000mV 0C Model Setup 't_ff:\generate_n:0:FF|s_q'
+Slack : -0.330
+TNS   : -0.330
+
+Type  : Slow 1000mV 0C Model Setup 't_ff:\generate_n:2:FF|s_q'
+Slack : -0.003
+TNS   : -0.003
+
+Type  : Slow 1000mV 0C Model Hold 't_ff:\generate_n:0:FF|s_q'
+Slack : 0.335
+TNS   : 0.000
+
+Type  : Slow 1000mV 0C Model Hold 'clk'
+Slack : 0.350
+TNS   : 0.000
+
+Type  : Slow 1000mV 0C Model Hold 't_ff:\generate_n:2:FF|s_q'
+Slack : 0.559
+TNS   : 0.000
+
+Type  : Slow 1000mV 0C Model Hold 't_ff:\generate_n:1:FF|s_q'
+Slack : 0.598
+TNS   : 0.000
+
+Type  : Slow 1000mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -4.763
+
+Type  : Slow 1000mV 0C Model Minimum Pulse Width 't_ff:\generate_n:0:FF|s_q'
+Slack : -1.763
+TNS   : -1.763
+
+Type  : Slow 1000mV 0C Model Minimum Pulse Width 't_ff:\generate_n:1:FF|s_q'
+Slack : -1.763
+TNS   : -1.763
+
+Type  : Slow 1000mV 0C Model Minimum Pulse Width 't_ff:\generate_n:2:FF|s_q'
+Slack : -1.763
+TNS   : -1.763
+
+Type  : Fast 1000mV 0C Model Setup 'clk'
+Slack : -0.235
+TNS   : -0.235
+
+Type  : Fast 1000mV 0C Model Setup 't_ff:\generate_n:1:FF|s_q'
+Slack : -0.039
+TNS   : -0.039
+
+Type  : Fast 1000mV 0C Model Setup 't_ff:\generate_n:0:FF|s_q'
+Slack : 0.019
+TNS   : 0.000
+
+Type  : Fast 1000mV 0C Model Setup 't_ff:\generate_n:2:FF|s_q'
+Slack : 0.450
+TNS   : 0.000
+
+Type  : Fast 1000mV 0C Model Hold 't_ff:\generate_n:0:FF|s_q'
+Slack : 0.221
+TNS   : 0.000
+
+Type  : Fast 1000mV 0C Model Hold 'clk'
+Slack : 0.291
+TNS   : 0.000
+
+Type  : Fast 1000mV 0C Model Hold 't_ff:\generate_n:2:FF|s_q'
+Slack : 0.308
+TNS   : 0.000
+
+Type  : Fast 1000mV 0C Model Hold 't_ff:\generate_n:1:FF|s_q'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Fast 1000mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -4.763
+
+Type  : Fast 1000mV 0C Model Minimum Pulse Width 't_ff:\generate_n:0:FF|s_q'
+Slack : -1.763
+TNS   : -1.763
+
+Type  : Fast 1000mV 0C Model Minimum Pulse Width 't_ff:\generate_n:1:FF|s_q'
+Slack : -1.763
+TNS   : -1.763
+
+Type  : Fast 1000mV 0C Model Minimum Pulse Width 't_ff:\generate_n:2:FF|s_q'
+Slack : -1.763
+TNS   : -1.763
+
+------------------------------------------------------------

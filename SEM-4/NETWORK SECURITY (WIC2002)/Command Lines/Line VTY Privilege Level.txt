@@ -1,0 +1,7 @@
+a user with the highest privilege level (15) will default to privileged EXEC mode when accessing the vty lines (go straight to R1#, instead of R1>)
+
+R1(config)# line vty 0 4
+R1(config-line)# privilege level 15
+R1(config-line)# login local
+R1(config-line)# transport input ssh
+R1(config-line)# exit

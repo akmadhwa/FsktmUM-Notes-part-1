@@ -1,0 +1,13 @@
+Configure the AAA RADIUS server IP address and secret key on R3.
+Note: The commands radius-server host and radius-server key are deprecated. Currently Packet Tracer does not support the new command radius server.
+R3(config)# radius-server host 192.168.3.2 <--- RADIUS server
+R3(config)# radius-server key radiuspa55 <--- key
+--------------------
+Enable AAA on R3 and configure all logins to authenticate using the AAA RADIUS server. If it is not available, then use the local database.
+R3(config)#aaa new-model 
+R3(config)#aaa authentication login default group radius local
+---------------------
+Configure AAA authentication for console login to use the default AAA authentication method.
+
+R3(config)#line con 0
+R3(config-line)#login authentication default

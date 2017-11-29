@@ -1,0 +1,8 @@
+en
+conf t
+router bgp <AS number>
+	bgp router-id <id>
+	neighbor <ip address neighbor> remote-as <AS neighbor>
+	network <N. Addr.> mask <netmask>
+	exit
+

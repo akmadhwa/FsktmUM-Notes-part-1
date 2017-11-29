@@ -1,0 +1,31 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity XOR8 is
+	port (
+		a, b: in std_logic;
+		c: out std_logic
+	);
+	
+end XOR8;
+
+architecture func of XOR8 is
+
+signal s: std_logic_vector(1 downto 0);
+
+begin
+
+--s(0)<=cin;
+
+
+generate_i : for i in 7 downto 0 generate
+
+begin
+
+begin
+
+	XOR4: oneXOR port map (a(i), b(i), c(i));
+
+end generate generate_i;
+
+end func;

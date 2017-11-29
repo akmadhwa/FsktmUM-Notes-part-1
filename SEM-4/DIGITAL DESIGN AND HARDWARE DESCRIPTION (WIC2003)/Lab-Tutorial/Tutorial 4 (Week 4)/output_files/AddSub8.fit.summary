@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Mar 19 14:15:00 2017
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : AddSub8
+Top-level Entity Name : AddSub8
+Family : Cyclone IV E
+Device : EP4CE115F29I8L
+Timing Models : Final
+Total logic elements : 16 / 114,480 ( < 1 % )
+    Total combinational functions : 16 / 114,480 ( < 1 % )
+    Dedicated logic registers : 0 / 114,480 ( 0 % )
+Total registers : 0
+Total pins : 50 / 529 ( 9 % )
+Total virtual pins : 0
+Total memory bits : 0 / 3,981,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

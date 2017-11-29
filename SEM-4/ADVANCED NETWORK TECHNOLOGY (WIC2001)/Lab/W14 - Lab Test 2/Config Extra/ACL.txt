@@ -1,0 +1,37 @@
+R0 - DMZ
+
+en
+conf t
+ip access-list extended LAN1
+	permit 133.61.2.0 0.0.0.255 133.61.10.0 0.0.0.255
+	permit 133.61.3.0 0.0.0.255 133.61.10.0 0.0.0.255
+	exit
+int g0/1
+	ip access-group LAN1 in
+------------------------
+
+R1 - LAN2 Private Lan
+
+en
+conf t
+ip access-list extended LAN2
+	permit 133.61.2.0 0.0.0.255 172.16.61.0 0.0.0.255
+	permit 133.61.3.0 0.0.0.255 172.16.61.0 0.0.0.255
+	exit
+int g0/1
+	ip access-group LAN2 in
+
+---------------------------
+
+R1 - LAN3 - Data Center
+
+en
+conf t
+ip access-list extended LAN3
+	permit ip 133.61.10.0 0.0.0.255 133.61.30.0 0.0.0.255
+	permit ip 133.61.2.0 0.0.0.255 133.61.30.0 0.0.0.255
+	exit
+int g0/2
+	ip access-group LAN3 in
+	exit
+

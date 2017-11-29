@@ -1,0 +1,5 @@
+en
+conf t
+hostname R1
+enable password cisco
+no ip domain lookup

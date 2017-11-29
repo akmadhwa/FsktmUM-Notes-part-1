@@ -1,0 +1,2 @@
+Use the aaa authentication command to use the local database as the default login authentication method.
+R1(config)# aaa authorization exec default local

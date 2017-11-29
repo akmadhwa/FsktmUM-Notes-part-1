@@ -1,0 +1,5 @@
+en
+conf t
+Router(config)# router eigrp <no. Autonomous System>
+Router(config-router)# network <N. Addr.> <wildcard> <--wilcard optional
+Router(config-router)# redistribute static

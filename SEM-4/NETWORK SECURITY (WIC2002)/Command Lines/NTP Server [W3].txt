@@ -1,0 +1,8 @@
+Pergi service, NTP, enable, masukkan key dan password
+
+kalau di router, boleh enter command
+
+Router(config)# ntp master <stratum id, 1-15, default is 8>
+
+show ntp status
+show ntp associations

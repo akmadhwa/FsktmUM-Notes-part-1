@@ -1,0 +1,12 @@
+ipv6 unicast routing
+
+ipv6 router rip <process name>
+
+
+int <int>
+ipv6 rip <process name> enable
+ipv6 rip <process name> default-information originate
+
+int <int>
+ipv6 rip <process name> enable
+redistribute <protocol>
