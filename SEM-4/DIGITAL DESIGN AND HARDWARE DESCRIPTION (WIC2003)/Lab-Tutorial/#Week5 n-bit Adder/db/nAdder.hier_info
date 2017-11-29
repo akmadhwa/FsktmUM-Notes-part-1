@@ -1,0 +1,117 @@
+|nAdder
+a[0] => FA:generate_i:0:nAdder_0.a
+a[1] => FA:generate_i:1:nAdder_0.a
+a[2] => FA:generate_i:2:nAdder_0.a
+a[3] => FA:generate_i:3:nAdder_0.a
+a[4] => FA:generate_i:4:nAdder_0.a
+a[5] => FA:generate_i:5:nAdder_0.a
+a[6] => FA:generate_i:6:nAdder_0.a
+a[7] => FA:generate_i:7:nAdder_0.a
+b[0] => FA:generate_i:0:nAdder_0.b
+b[1] => FA:generate_i:1:nAdder_0.b
+b[2] => FA:generate_i:2:nAdder_0.b
+b[3] => FA:generate_i:3:nAdder_0.b
+b[4] => FA:generate_i:4:nAdder_0.b
+b[5] => FA:generate_i:5:nAdder_0.b
+b[6] => FA:generate_i:6:nAdder_0.b
+b[7] => FA:generate_i:7:nAdder_0.b
+c_in => FA:generate_i:0:nAdder_0.c_in
+sum[0] <= FA:generate_i:0:nAdder_0.s
+sum[1] <= FA:generate_i:1:nAdder_0.s
+sum[2] <= FA:generate_i:2:nAdder_0.s
+sum[3] <= FA:generate_i:3:nAdder_0.s
+sum[4] <= FA:generate_i:4:nAdder_0.s
+sum[5] <= FA:generate_i:5:nAdder_0.s
+sum[6] <= FA:generate_i:6:nAdder_0.s
+sum[7] <= FA:generate_i:7:nAdder_0.s
+c_out <= FA:generate_i:7:nAdder_0.c_out
+
+
+|nAdder|FA:\generate_i:7:nAdder_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|nAdder|FA:\generate_i:6:nAdder_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|nAdder|FA:\generate_i:5:nAdder_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|nAdder|FA:\generate_i:4:nAdder_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|nAdder|FA:\generate_i:3:nAdder_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|nAdder|FA:\generate_i:2:nAdder_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|nAdder|FA:\generate_i:1:nAdder_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|nAdder|FA:\generate_i:0:nAdder_0
+a => s0.IN0
+a => s2.IN0
+b => s0.IN1
+b => s2.IN1
+c_in => s1.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

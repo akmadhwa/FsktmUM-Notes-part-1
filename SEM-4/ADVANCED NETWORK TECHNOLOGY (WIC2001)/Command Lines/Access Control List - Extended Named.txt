@@ -1,0 +1,17 @@
+R1>en
+R1# conf t
+
+//EXTENDED NUMBERED
+
+R3(config)# ip access-list extended <named>
+R3(config-ext-nacl)# permit tcp <N. Addr> <wilcard> host <destiantion IP addr.> eq <port apa>
+
+R3(config-ext-nacl)# interface S0/0/1
+R3(config-if)# ip access-group WEB-POLICY out
+
+//MODIFY
+
+R1(config)# ip access-list extended 100
+R1(config-ext-nacl)# 30 permit ip 192.168.10.0 0.0.0.255 192.168.30.0 0.0.0.255 <---check dulu line berapa nak edit
+R1(config-ext-nacl)# end
+

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Mar 19 14:14:22 2017
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : AddSub8
+Top-level Entity Name : AddSub8
+Family : Cyclone IV E
+Total logic elements : 16
+    Total combinational functions : 16
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 50
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,18 @@
+R1(config)#ipv6 access-list BLOCK_HTTP
+R1(config-ipv6-acl)#deny tcp any host 2001:DB8:1:30::30 eq www <-- block http
+R1(config-ipv6-acl)#deny tcp any host 2001:DB8:1:30::30 eq 443 <-- block https
+R1(config-ipv6-acl)#permit ip any any
+R1(config-ipv6-acl)#exit
+
+R1(config)#int g0/1
+R1(config-if)#ipv6 traffic-filter BLOCK_HTTP in
+
+---------------------
+
+R3(config)#ipv6 a
+R3(config)#ipv6 access-list BLOCK_ICMP
+R3(config-ipv6-acl)#deny icmp any any <-- block ping
+R3(config-ipv6-acl)#permit ipv6 any any <-- permit ipv6 traffic
+
+R3(config-if)#int g0/0
+R3(config-if)#ipv6 traffic-filter BLOCK_ICMP out

@@ -1,0 +1,7 @@
+en
+conf t
+interface <nama interface default gateway>
+glbp 1 ip <ip address virtual>
+glb1 preempt
+glbp 1 priority 150
+glbp 1 load-balancing round-robin

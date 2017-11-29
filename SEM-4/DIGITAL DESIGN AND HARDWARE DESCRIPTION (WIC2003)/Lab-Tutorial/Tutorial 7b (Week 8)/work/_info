@@ -1,0 +1,286 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 8 (Week 9)
+Eadder4con
+Z0 w1492864910
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)
+Z5 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q1/adder4con.vhd
+Z6 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q1/adder4con.vhd
+l0
+L5
+V^DGn8?:OBG0@0`8;ajL750
+!s100 MObSX8j0LJPa=f>gMeFQ^2
+Z7 OV;C;10.4d;61
+32
+Z8 !s110 1492870574
+!i10b 1
+Z9 !s108 1492870574.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q1/adder4con.vhd|
+Z11 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q1/adder4con.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1
+Abehavior
+R1
+R2
+R3
+DEx4 work 9 adder4con 0 22 ^DGn8?:OBG0@0`8;ajL750
+l21
+L16
+V?7>K9cP]X8iMZR9H8zzLh1
+!s100 O`TCeKP_PCL=3H^^_nbVj3
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eadder4contb
+Z14 w1492866080
+R1
+Z15 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z16 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R2
+R3
+R4
+Z17 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q1/adder4conTB.vhd
+Z18 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q1/adder4conTB.vhd
+l0
+L7
+VXU`CBWEdVM<a>9]62D`Ze0
+!s100 ?<Pab;JzXnc8Ui]j1i`hH3
+R7
+32
+R8
+!i10b 1
+R9
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q1/adder4conTB.vhd|
+Z20 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q1/adder4conTB.vhd|
+!i113 1
+R12
+R13
+Astimulus
+R1
+R15
+R16
+R2
+R3
+DEx4 work 11 adder4contb 0 22 XU`CBWEdVM<a>9]62D`Ze0
+l31
+L10
+VPGJ`ZCjB<m0b5M9Iod]Q61
+!s100 DRC[CUbN0UJ=A;1;1WQWk0
+R7
+32
+R8
+!i10b 1
+R9
+R19
+R20
+!i113 1
+R12
+R13
+Pconversions
+R2
+R3
+Z21 w1492869906
+R4
+Z22 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/conversions.vhd
+Z23 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/conversions.vhd
+l0
+L4
+V037nz^ACzF<@McoM7NV[Y0
+!s100 Q?ECZLc=eY?FVU@DeB;ZM0
+R7
+32
+b1
+R8
+!i10b 1
+R9
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/conversions.vhd|
+Z25 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/conversions.vhd|
+!i113 1
+R12
+R13
+Bbody
+Z26 DPx4 work 11 conversions 0 22 037nz^ACzF<@McoM7NV[Y0
+R2
+R3
+l0
+L9
+Vm=5j52ECzFDYB`KUi>[To2
+!s100 Mc_F<fc=RRRMPA5C;c8>R1
+R7
+32
+R8
+!i10b 1
+R9
+R24
+R25
+!i113 1
+R12
+R13
+Econverter
+w1492869691
+R26
+R2
+R3
+R4
+8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converter.vhd
+FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converter.vhd
+l0
+L6
+VO<GJaDSJIjGD7SM^B<DMf3
+!s100 K?i2gFC1jC]5Gc8F=9e450
+R7
+32
+Z27 !s110 1492870575
+!i10b 1
+R9
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converter.vhd|
+!s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converter.vhd|
+!i113 1
+R12
+R13
+Econvertertb
+Z28 w1492869035
+R15
+R16
+R2
+R3
+R4
+Z29 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converterTB.vhd
+Z30 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converterTB.vhd
+l0
+L6
+V>`Jj1TJYAW>[X[T[AgO931
+!s100 aFGm1TeeZbkXUVKPdZSj51
+R7
+32
+R27
+!i10b 1
+Z31 !s108 1492870575.000000
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converterTB.vhd|
+Z33 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q2/converterTB.vhd|
+!i113 1
+R12
+R13
+Astimulus
+R15
+R16
+R2
+R3
+DEx4 work 11 convertertb 0 22 >`Jj1TJYAW>[X[T[AgO931
+l26
+L9
+VkbAgJ9F3M`Uh7B3DXgcoV1
+!s100 ZCDnGCgzQh9EA>a[N1fjU2
+R7
+32
+R27
+!i10b 1
+R31
+R32
+R33
+!i113 1
+R12
+R13
+Efuncand
+Z34 w1492870269
+R1
+Z35 DPx4 work 9 logicpack 0 22 Kzd]5R=IkZEh6:ALm>z1_3
+R2
+R3
+R4
+Z36 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q3/funcAND.vhd
+Z37 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q3/funcAND.vhd
+l0
+L5
+Va@hT;0ohffafEOUT8oz1=2
+!s100 FQnoOz^PTSmW:n[7jo2H21
+R7
+32
+R27
+!i10b 1
+R31
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q3/funcAND.vhd|
+Z39 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q3/funcAND.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R35
+R2
+R3
+DEx4 work 7 funcand 0 22 a@hT;0ohffafEOUT8oz1=2
+l11
+L10
+V2kS:NRZU5lYF8VB7cKO_A1
+!s100 ?ia75HQ17ee=aYm;[WgC60
+R7
+32
+R27
+!i10b 1
+R31
+R38
+R39
+!i113 1
+R12
+R13
+Plogicpack
+R1
+R2
+R3
+Z40 w1492870564
+R4
+Z41 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q3/logicPack.vhd
+Z42 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q3/logicPack.vhd
+l0
+L5
+VKzd]5R=IkZEh6:ALm>z1_3
+!s100 XNcEjh`E5JELc2z2>c7Tj3
+R7
+32
+b1
+R27
+!i10b 1
+R31
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q3/logicPack.vhd|
+Z44 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7b (Week 8)/Q3/logicPack.vhd|
+!i113 1
+R12
+R13
+Bbody
+R35
+R1
+R2
+R3
+l0
+L9
+VXUUPlS7k@Ji6PBmRkJU4a3
+!s100 ;^oQ>zJe]l6^Kk<M>4<992
+R7
+32
+R27
+!i10b 1
+R31
+R43
+R44
+!i113 1
+R12
+R13

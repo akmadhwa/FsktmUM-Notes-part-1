@@ -1,0 +1,45 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity LEDswitch is
+	port (
+--		SW: in std_logic_vector (1 downto 0);
+--		HEX0: out std_logic_vector (6 downto 0)
+		
+		SW: in std_logic_vector (9 downto 0);
+		--SW: in std_logic_vector (5 downto 0);
+		LEDR: out std_logic_vector (1 downto 0)
+
+	);
+end LEDswitch;
+
+architecture behav of LEDswitch is
+
+	begin
+--		
+--		WITH SW SELECT
+--		
+--			HEX0 <= "0100001" WHEN "00",
+--					  "0000110" WHEN "01",
+--					  "0100100" WHEN "10",
+--					  "0000000" WHEN others;
+
+--	if SW (9 downto 8) => "00" then
+--		LEDR <= SW (5 downto 4);
+--	
+--	elsif SW (9 downto 8) = "01" then
+--		LEDR <= SW (3 downto 2);
+--	
+--	elsif SW (9 downto 8) = "10" then
+--		LEDR <= SW (1 downto 0);
+--	
+--	else	
+--		LEDR <= "11";
+		
+	LEDR <= SW(5 downto 4) WHEN SW(9 DOWNTO 8)="00" ELSE
+              "11";
+		
+	end if;
+	
+		
+end behav;

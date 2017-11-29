@@ -1,0 +1,17 @@
+pada switch
+
+vlan 10
+vlan 30
+int <int>
+switchport mode trunk
+
+-----------------
+pada router interface yang bersambung pada switch trunk port
+
+int <int?>.<nombor subinterface, boleh guna no. vlan> <--- bersambung dgn port trunk (e.g. int g0/0.10)
+encapsulation dot1q <vlan-id> (e.g. encapsulation dot1q 10)
+ip address <ip address> <subnet mask>
+
+int g0/0
+no shut <-- kalau physical int down, subint juga down
+

@@ -1,0 +1,48 @@
+{D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/oneXOR.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/oneXOR.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity oneXOR
+-- Compiling architecture func of oneXOR
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/FA.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/FA.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FA
+-- Compiling architecture add of FA
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/Adder16.vhd} {0 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/Adder16.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Adder16
+-- Compiling architecture fulladd of Adder16
+** Error: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/Adder16.vhd(38): Cannot resolve indexed name (type ieee.std_logic_1164.STD_ULOGIC) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/Adder16.vhd(38): Cannot resolve indexed name (type ieee.std_logic_1164.STD_ULOGIC) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/Adder16.vhd(38): Cannot resolve indexed name (type ieee.std_logic_1164.STD_ULOGIC) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/Adder16.vhd(42): Illegal target for signal assignment.
+** Error: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/Adder16.vhd(42): (vcom-1136) Unknown identifier "c_out4".
+
+** Error: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/Adder16.vhd(44): VHDL Compiler exiting
+
+} {8.0 13.0 14.0 15.0} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/Adder4.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/Adder4.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Adder4
+-- Compiling architecture fulladd of Adder4
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/XOR4.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/XOR4.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity XOR4
+-- Compiling architecture fullXOR of XOR4
+
+} {} {}}

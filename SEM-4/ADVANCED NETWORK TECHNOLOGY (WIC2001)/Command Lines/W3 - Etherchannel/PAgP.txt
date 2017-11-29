@@ -1,0 +1,5 @@
+On - On = Yes
+Auto/Desirable - Desirable = Yes
+On/Auto/Desirable - Not Configured = No
+On - Desirable = No
+Auto/On - Auto = No

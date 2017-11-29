@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon May 22 16:51:44 2017
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : LEDswitchv2
+Top-level Entity Name : DE2LAB1
+Family : Cyclone IV E
+Total logic elements : 31
+    Total combinational functions : 31
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 31
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

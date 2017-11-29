@@ -1,0 +1,6 @@
+en
+conf t
+int s0/1/0
+encapsulation ppp
+ppp
+ppp authentication chap

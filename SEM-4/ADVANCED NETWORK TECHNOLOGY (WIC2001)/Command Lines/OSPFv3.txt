@@ -1,0 +1,13 @@
+RA(config)#ipv6 unicast-routing
+
+RA(config)#ipv6 router ospf <process id>
+RA(config-rtr)#router-id <id, e.g. 1.1.1.1>
+
+RA(config)#int g0/0
+RA(config-if)#ipv6 ospf <process id> area <area num>
+
+RA#show ipv6 int brief
+RA#show ipv6 route
+RA#show ipv6 ospf database
+RA#show ipv6 ospf interface
+RA#show ipv6 ospf neighbor

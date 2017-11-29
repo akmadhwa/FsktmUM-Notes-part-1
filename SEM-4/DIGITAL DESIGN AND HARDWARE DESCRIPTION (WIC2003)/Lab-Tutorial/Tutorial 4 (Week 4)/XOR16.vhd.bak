@@ -1,0 +1,37 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity XOR16 is
+	port (
+		c_in16, b16: in std_logic_vector(15 downto 0);
+		c_out16: out std_logic_vector(15 downto 0)
+	);
+	
+end XOR16;
+
+architecture fullXOR of XOR16 is
+component XOR4 is
+	port (
+		c_in4, b4: in std_logic_vector(3 downto 0);
+		c_out4: out std_logic_vector(3 downto 0)
+	
+	);
+	
+end component;
+
+signal s: std_logic_vector(1 downto 0);
+
+begin
+
+--s(0)<=cin;
+
+
+generate_i : for i in 3 downto 0 generate
+
+begin
+
+	XOR4: oneXOR port map (c_in16((i*4+3) downto (i*4)), b16((i*4+3) downto (i*4)), c_out16((i*4+1) downto (i*4)));
+
+end generate generate_i;
+
+end fullXOR;

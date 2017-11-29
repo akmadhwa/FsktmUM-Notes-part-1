@@ -1,0 +1,62 @@
+R1# mkdir ipsdir
+
+paste the crypto key file into putty
+
+----------------
+config IPS
+R1(config)# ip ips name iosips
+R1(config)# ip ips name ips list <name/number of ACL>
+R1(config)# ip ips config location flash:ipsdir <--- store IPS Signature in this directory
+
+-----------------
+enable HTTP server & SDEE
+
+R1(config)# ip http server <--- enable HTTP server on router
+R1(config)# ip ips notify sdee <---- enable SDEE
+
+----------------
+Configure IOS IPS to use one of the pre-defined signature categories
+Warning: The “all” signature category contains all signatures in a signature release. Do not unretired the “all” category because IOS IPS cannot compile and use all the signatures contained in a signature release at one time. The router will run out of memory.
+Note: When configuring IOS IPS, it is required to first retire all the signatures in the “all” category and then unretire selected signature categories.
+
+
+R1(config)# ip ips signature-category
+R1(config-ips-category)# category all
+R1(config-ips-category-action)# retired true <--- retired all first
+R1(config-ips-category-action)# exit
+R1(config-ips-category)# category ios_ips basic
+R1(config-ips-category-action)# retired false <--- unretired one by one
+R1(config-ips-category-action)# exit
+R1(config-ips-category)# exit
+Do you want to accept these changes? [confirm] <Enter>
+
+-----------------
+apply IPS on interface
+
+R1(config)# interface serial0/0/0
+R1(config-if)# ip ips iosips <in/out>
+
+--------------------
+modify signature
+
+R1(config)# ip ips signature-definition
+R1(config-sigdef)# signature 2004 0
+R1(config-sigdef-sig)#status
+R1(config-sigdef-sig-status)# retired false
+R1(config-sigdef-sig-status)# enabled true
+R1(config-sigdef-sig-status)# engine
+R1(config-sigdef-sig-engine)# event-action produce-alert
+R1(config-sigdef-sig-engine)# event-action deny-packet-inline
+R1(config-sigdef-sig-engine)# event-action reset-tcp-connection
+R1(config-sigdef-sig-engine)# exit
+R1(config-sigdef-sig)# exit
+R1(config-sigdef)# exit
+Do you want to accept these changes? [confirm] <Enter>
+
+
+
+show ip ips signature count
+show ip ips all
+
+
+

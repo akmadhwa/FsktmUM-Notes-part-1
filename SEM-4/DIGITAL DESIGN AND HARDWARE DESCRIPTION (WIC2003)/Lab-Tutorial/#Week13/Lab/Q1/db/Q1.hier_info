@@ -1,0 +1,36 @@
+|counter
+clock_50 => ledr[0]~reg0.CLK
+clock_50 => \comp:count[0].CLK
+clock_50 => \comp:count[1].CLK
+clock_50 => \comp:count[2].CLK
+clock_50 => \comp:count[3].CLK
+clock_50 => \comp:count[4].CLK
+clock_50 => \comp:count[5].CLK
+clock_50 => \comp:count[6].CLK
+clock_50 => \comp:count[7].CLK
+clock_50 => \comp:count[8].CLK
+clock_50 => \comp:count[9].CLK
+clock_50 => \comp:count[10].CLK
+clock_50 => \comp:count[11].CLK
+clock_50 => \comp:count[12].CLK
+clock_50 => \comp:count[13].CLK
+clock_50 => \comp:count[14].CLK
+clock_50 => \comp:count[15].CLK
+clock_50 => \comp:count[16].CLK
+clock_50 => \comp:count[17].CLK
+clock_50 => \comp:count[18].CLK
+clock_50 => \comp:count[19].CLK
+clock_50 => \comp:count[20].CLK
+clock_50 => \comp:count[21].CLK
+clock_50 => \comp:count[22].CLK
+clock_50 => \comp:count[23].CLK
+clock_50 => \comp:count[24].CLK
+clock_50 => \comp:count[25].CLK
+clock_50 => \comp:count[26].CLK
+clock_50 => \comp:count[27].CLK
+clock_50 => \comp:count[28].CLK
+clock_50 => \comp:count[29].CLK
+clock_50 => \comp:count[30].CLK
+ledr[0] << ledr[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

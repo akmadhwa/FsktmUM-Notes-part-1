@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Mar 15 15:30:35 2017
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : nAdder
+Top-level Entity Name : nAdder
+Family : Cyclone IV E
+Total logic elements : 20
+    Total combinational functions : 20
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 26
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

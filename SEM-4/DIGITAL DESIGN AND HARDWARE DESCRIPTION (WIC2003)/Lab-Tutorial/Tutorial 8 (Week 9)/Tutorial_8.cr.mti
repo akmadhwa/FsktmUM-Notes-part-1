@@ -1,0 +1,49 @@
+{D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 8 (Week 9)/Q1/control.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 8 (Week 9)/Q1/control.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package vm_pack
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity control
+-- Compiling architecture synth of control
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 8 (Week 9)/Q1/vm_pack.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 8 (Week 9)/Q1/vm_pack.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Compiling package vm_pack
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 8 (Week 9)/Q1/control_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 8 (Week 9)/Q1/control_tb.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity control_tb
+-- Compiling architecture behav_tb of control_tb
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 8 (Week 9)/Q2/control2TB.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 8 (Week 9)/Q2/control2TB.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity control2tb
+-- Compiling architecture behav_tb of control2tb
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 8 (Week 9)/Q2/control2TB.vhd(34): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 8 (Week 9)/Q2/control2TB.vhd(37): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 8 (Week 9)/Q2/control2TB.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 8 (Week 9)/Q2/control2TB.vhd(46): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 8 (Week 9)/Q2/control2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 8 (Week 9)/Q2/control2.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package vm_pack2
+-- Compiling entity control2
+-- Compiling architecture state of control2
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 8 (Week 9)/Q2/vm_pack2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 8 (Week 9)/Q2/vm_pack2.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Compiling package vm_pack2
+
+} {} {}}

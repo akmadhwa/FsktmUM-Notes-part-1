@@ -1,0 +1,93 @@
+|rotate_All
+CLOCK_50 => counter:counter_0.clock_50
+SW[0] => rotate:rotate_0.SW
+SW[1] => rotate:rotate_0.RST
+LEDR[0] << rotate:rotate_0.LEDR[0]
+LEDR[1] << rotate:rotate_0.LEDR[1]
+LEDR[2] << rotate:rotate_0.LEDR[2]
+LEDR[3] << rotate:rotate_0.LEDR[3]
+LEDR[4] << rotate:rotate_0.LEDR[4]
+LEDR[5] << rotate:rotate_0.LEDR[5]
+LEDR[6] << rotate:rotate_0.LEDR[6]
+LEDR[7] << rotate:rotate_0.LEDR[7]
+
+
+|rotate_All|counter:counter_0
+clock_50 => clock_out~reg0.CLK
+clock_50 => \comp:count[0].CLK
+clock_50 => \comp:count[1].CLK
+clock_50 => \comp:count[2].CLK
+clock_50 => \comp:count[3].CLK
+clock_50 => \comp:count[4].CLK
+clock_50 => \comp:count[5].CLK
+clock_50 => \comp:count[6].CLK
+clock_50 => \comp:count[7].CLK
+clock_50 => \comp:count[8].CLK
+clock_50 => \comp:count[9].CLK
+clock_50 => \comp:count[10].CLK
+clock_50 => \comp:count[11].CLK
+clock_50 => \comp:count[12].CLK
+clock_50 => \comp:count[13].CLK
+clock_50 => \comp:count[14].CLK
+clock_50 => \comp:count[15].CLK
+clock_50 => \comp:count[16].CLK
+clock_50 => \comp:count[17].CLK
+clock_50 => \comp:count[18].CLK
+clock_50 => \comp:count[19].CLK
+clock_50 => \comp:count[20].CLK
+clock_50 => \comp:count[21].CLK
+clock_50 => \comp:count[22].CLK
+clock_50 => \comp:count[23].CLK
+clock_50 => \comp:count[24].CLK
+clock_50 => \comp:count[25].CLK
+clock_50 => \comp:count[26].CLK
+clock_50 => \comp:count[27].CLK
+clock_50 => \comp:count[28].CLK
+clock_50 => \comp:count[29].CLK
+clock_50 => \comp:count[30].CLK
+clock_out <= clock_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|rotate_All|rotate:rotate_0
+CLOCK => s_a[0].CLK
+CLOCK => s_a[1].CLK
+CLOCK => s_a[2].CLK
+CLOCK => s_a[3].CLK
+CLOCK => s_a[4].CLK
+CLOCK => s_a[5].CLK
+CLOCK => s_a[6].CLK
+CLOCK => s_a[7].CLK
+SW => s_a.OUTPUTSELECT
+SW => s_a.OUTPUTSELECT
+SW => s_a.OUTPUTSELECT
+SW => s_a.OUTPUTSELECT
+SW => s_a.OUTPUTSELECT
+SW => s_a.OUTPUTSELECT
+SW => s_a.OUTPUTSELECT
+SW => s_a.OUTPUTSELECT
+SW => s_a.OUTPUTSELECT
+SW => s_a.OUTPUTSELECT
+SW => s_a.OUTPUTSELECT
+SW => s_a.OUTPUTSELECT
+SW => s_a.OUTPUTSELECT
+SW => s_a.OUTPUTSELECT
+SW => s_a.OUTPUTSELECT
+SW => s_a.OUTPUTSELECT
+RST => s_a[0].ACLR
+RST => s_a[1].ACLR
+RST => s_a[2].ACLR
+RST => s_a[3].ACLR
+RST => s_a[4].ACLR
+RST => s_a[5].ACLR
+RST => s_a[6].PRESET
+RST => s_a[7].ACLR
+LEDR[0] <= s_a[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= s_a[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= s_a[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= s_a[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= s_a[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= s_a[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= s_a[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= s_a[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

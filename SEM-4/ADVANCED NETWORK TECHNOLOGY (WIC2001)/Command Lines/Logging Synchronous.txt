@@ -1,0 +1,4 @@
+en
+conf t
+line con 0
+logging synchronous

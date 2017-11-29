@@ -1,0 +1,12 @@
+R1>en
+R1# conf t
+
+//EXTENDED NUMBERED
+
+R1(config)# access-list 100 remark Allow Web & SSH Access
+R1(config)# access-list 100 permit <protocol apa> <N. Addr> <wilcard> eq <port number> <---- permit protocol apa yang boleh
+R1(config)# access-list 100 permit tcp host <ip address> host <ip address destination> eq 22
+
+
+R1(config)# interface s0/0/0
+R1(config-if)# ip access-group 100 out

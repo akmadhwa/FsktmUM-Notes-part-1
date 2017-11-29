@@ -1,0 +1,9 @@
+S1(config)# spanning-tree mode rapid-pvst - config Rapid PVST+
+S1(config)# spanning-tree vlan 1,10,99 root primary - tukar root bridge untuk vlan jadi primary
+S2(config)#spanning-tree vlan 1,10,203,30,40,50,60,70,80,99 root secondary - tukar root bridge untuk vlan jadi secondary
+S1(config)#spanning-tree vlan 10 priority 4096 - config spanning tree priorities by vlan
+S1(config)#spanning-tree vlan 20 priority 8192
+
+
+S1# sh running-config | include spanning-tree mode - check spanning-tree mode config
+

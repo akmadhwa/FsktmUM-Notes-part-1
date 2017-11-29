@@ -1,0 +1,3 @@
+IPv6-Edge(config)#ipv6 route <network address yg hujung/subnet> <exit interface/ipv6 address interface next hop>
+
+IPv6-Edge(config)#ipv6 route ::/0 s0/1/0 <--- static default route

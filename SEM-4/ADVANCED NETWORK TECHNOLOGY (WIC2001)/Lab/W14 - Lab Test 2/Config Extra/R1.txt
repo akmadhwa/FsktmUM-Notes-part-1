@@ -1,0 +1,8 @@
+en
+conf t
+ip nat pool POOL 133.61.2.1 133.61.2.254 netmask 255.255.255.0
+ip nat inside source list NAT pool POOL
+
+int g0/2
+	no ip address
+	ip address 133.61.3.254 255.255.255.0

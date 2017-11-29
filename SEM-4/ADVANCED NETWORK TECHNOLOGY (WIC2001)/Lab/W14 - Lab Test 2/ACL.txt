@@ -1,0 +1,23 @@
+Standard Numbered (1 - 99)
+
+----------------------------
+Extended Named 
+
+ip access-list extended <name>
+	permit ip 
+----------------------------
+Extended Numbered (100 dan ke atas)
+
+en
+conf t
+access-list <num.> permit ip host <src ip address> host <dest.>
+access-list <num.> permit ip host <src ip address> any
+access-list <num.> permit ip host <src ip address> <dest. N.Addr.> <wilcard mask>
+access-list <num.> permit ip <source N. Addr> <source wilcard> <dest. N. Addr.> <dest. wilcard>
+access-list <num.> permit ip any any
+access-list <num.> permit ip any host <ip addres>
+access-list <num.> permit ip any <dest. N.Address> <dest. wilcard>
+exit
+
+int <int>
+	ip access-group <name/num.> in/out

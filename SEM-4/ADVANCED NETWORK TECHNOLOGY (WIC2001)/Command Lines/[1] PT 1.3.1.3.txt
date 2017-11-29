@@ -1,0 +1,288 @@
+Cnt-Sw (Switch)
+
+- Configure remote management access and SSH
+
+  - Domain is cisco.com
+
+  - User CAdmin with password itsasecret
+
+  - Crypto key length of 1024
+
+  - SSH version 2, limited to 2 authentication 
+
+    attempts and a 60 second timeout
+
+  - Clear text passwords should be encrypted.
+
+
+
+vlan 60
+
+name Management
+
+int vlan 60
+
+ip addr 172.16.15.10 255.255.255.248
+
+no shut 
+
+ip default-gateway 172.16.15.9
+
+
+
+hostname Cnt-SW
+
+ip domain name cisco.com
+
+username CAdmin password itsasecret
+
+crypto key generate rsa
+
+1024
+
+ip ssh version 2
+
+ip ssh authentication-retries 2
+
+ip ssh time-out 60
+
+line vty 0 4
+
+login local
+
+transport input ssh
+
+service password-encryption 
+
+
+
+VLAN
+
+- Configure, name and assign VLANs. 
+
+- Configure trunking.
+
+- Port security:
+
+- On Fa0/1, allow 2 MAC addresses automatically 
+
+  added to the configuration file when detected. 
+
+  The port should not be disabled, but a syslog 
+
+  should be captured if a violation occurs.
+
+- Disable all other unused ports.
+
+
+
+vlan 15
+
+name Servers
+
+vlan 30
+
+name PCs
+
+vlan 45
+
+name Native
+
+
+
+int range fa0/1-24
+
+shut
+
+int range g0/1 - 2
+
+shut
+
+
+
+int range fa0/11 - 20
+
+switchport mode access
+
+switchport access vlan 15
+
+no shut
+
+int range fa0/1 - 10
+
+switchport mode access
+
+switchport access vlan 30
+
+no shut
+
+int g0/1
+
+switchport mode trunk
+
+switchport trunk native vlan 45
+
+no shut
+
+
+
+int fa0/1
+
+switchport port-security
+
+switchport port-security mac-address sticky 
+
+switchport port-security maximum 2
+
+switchport port-security violation restrict
+
+
+
+
+
+Central (Router)
+
+- Configure inter-VLAN routing.
+
+
+
+int g0/0.15
+
+encapsulation dot1q 15
+
+ip addr 172.16.15.17 255.255.255.240
+
+int g0/0.30
+
+encapsulation dot1q 30
+
+ip addr 172.16.15.33 255.255.255.224
+
+int g0/0.45
+
+encapsulation dot1q 45 native
+
+ip addr 172.16.15.1 255.255.255.248
+
+int g0/0.60
+
+encapsulation dot1q 60
+
+ip addr 172.16.15.9 255.255.255.248
+
+int g0/0
+
+no shut
+
+
+
+
+
+- Configure DHCP services for VLAN 30. 
+
+  Use LAN as the case-sensitive name for the pool.
+
+
+
+ip dhcp excluded-address 172.16.15.33
+
+ip dhcp pool LAN 
+
+network 172.16.15.32 255.255.255.224
+
+default-router 172.16.15.33
+
+
+
+OSPF
+
+- Use OSPF process ID 1 and router ID 1.1.1.1
+
+- Configure one network statement for the entire 
+
+  172.16.15.0/24 address space
+
+- Disable interfaces should not send OSPF 
+
+- Configure a default route to the Internet.
+
+
+
+router ospf 1
+
+router-id 1.1.1.1 
+
+network 172.16.15.0 0.0.0.255 area 0
+
+passive-interface g0/0
+
+passive-interface g0/0.15
+
+passive-interface g0/0.30
+
+passive-interface g0/0.45
+
+passive-interface g0/0.60
+
+
+
+ip route 0.0.0.0 0.0.0.0 s0/1/0
+
+
+
+
+
+NAT
+
+- Configure a standard ACL number 1. 
+
+  All IP addresses belonging to the 172.16.15.0/24
+
+- Configure static NAT for the File Server.
+
+- Configure dynamic NAT with PAT a /30 mask, 
+
+  64.100.32.56 and 64.100.32.57
+
+
+
+ip nat inside source static 172.15.15.18 64.100.32.58
+
+
+
+access-list 1 permit 172.16.15.0 0.0.0.255
+
+ip nat pool NET 64.100.32.56 64.100.32.57 netmask 255.255.255.252
+
+ip nat inside source list 1 pool NET overload
+
+int g0/0.15
+
+ip nat inside
+
+int g0/0.30
+
+ip nat inside
+
+int g0/0.45
+
+ip nat inside
+
+int g0/0.60
+
+ip nat inside
+
+int s0/0/0
+
+ip nat inside
+
+int s0/0/1
+
+ip nat inside
+
+
+
+int s0/1/0
+
+ip nat outside
+

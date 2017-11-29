@@ -1,0 +1,8 @@
+Configure the AAA TACACS server IP address and secret key on R2.
+Note: The commands tacacs-server host and tacacs-server key are deprecated. Currently, Packet Tracer does not support the new command tacacs server.
+R2(config)# tacacs-server host 192.168.2.2 < -- TACACS server
+R2(config)# tacacs-server key tacacspa55 <--- key
+---------------
+Enable AAA on R2 and configure all logins to authenticate using the AAA TACACS+ server. If it is not available, then use the local database.
+R2(config)#aaa new-model 
+R2(config)#aaa authentication login default group tacacs+ local <--- using tacacs server, and local if it's not available (as second option)

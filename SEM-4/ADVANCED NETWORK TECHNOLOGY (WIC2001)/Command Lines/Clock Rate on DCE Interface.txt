@@ -1,0 +1,4 @@
+en
+conf t
+int s0/0/0 <--contoh interface DCE
+clock rate 128000 <--- contoh rate

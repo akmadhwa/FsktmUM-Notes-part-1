@@ -1,0 +1,40 @@
+{D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 5 (Week 5)/Q2/t_ff.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\t_ff.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity t_ff
+-- Compiling architecture t_ff of t_ff
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 5 (Week 5)/Q2/asy_ctrTB.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctrTB.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity asy_ctrTB
+-- Compiling architecture stimulus of asy_ctrTB
+** Warning: D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctrTB.vhd(30): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctrTB.vhd(68): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctrTB.vhd(79): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctrTB.vhd(82): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctrTB.vhd(90): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctrTB.vhd(93): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctrTB.vhd(100): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 5 (Week 5)/Q2/asy_ctrGen.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctrGen.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity asy_ctrGen
+-- Compiling architecture asy_ctr of asy_ctrGen
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 5 (Week 5)/Q2/asy_ctr.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctr.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity asy_ctr
+-- Compiling architecture asy_ctr of asy_ctr
+
+} {} {}}

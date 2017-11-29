@@ -1,0 +1,29 @@
+en
+conf t
+ipv6 unicast-routing
+ipv6 dhcp pool <poolname>
+	domain-name <domain.com>
+	dns-server <ipv6 addr.>
+	prefix-delegation <network addr.> <hex-data>
+	prefix-delegation pool <poolname> lifetime
+	exit
+
+set which interface jadi dhcp server
+
+int <int>
+	ipv6 dhcp server <poolname> 
+
+--------------------
+Stateless
+
+en
+conf t
+ipv6 unicast-routing
+ipv6 dhcp pool <poolname>
+	domain-name <domain.com>
+	dns-server <ipv6 addr.>
+	exit
+
+int <int>
+	ipv6 dhcp server <poolname>
+	ipv6 nd other-config-flag

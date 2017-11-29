@@ -1,0 +1,15 @@
+R3# auto secure < --- disable common IP address
+nanti masukkan interface yang connected to internet
+
+Is this router connected to internet? [no]: yes
+Enter the number of interfaces facing the internet [1]: [Enter]
+Enter the interface name that is facing the internet: Serial0/0/1
+#  Unauthorized Access Prohibited #
+Enter the new enable password: cisco67890
+Confirm the enable password: cisco67890
+Blocking Period when Login Attack detected: 60
+Maximum Login failures with the device: 2
+Maximum time period for crossing the failed login attempts: 30
+Configure SSH server? [yes]: [Enter]
+Configure CBAC Firewall feature? [yes/no]: no
+Apply this configuration to running-config? [yes]: [Enter]

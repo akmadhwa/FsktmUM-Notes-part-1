@@ -1,0 +1,96 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q3
+Edecoder_case
+Z1 w1490778441
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q3/decoder_case.vhd
+Z7 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q3/decoder_case.vhd
+l0
+L5
+V=;UgGXj3AzEZA5V1Mb4=62
+!s100 >Cfmo:3PLaE:0MFiQzjd;1
+Z8 OV;C;10.4d;61
+32
+Z9 !s110 1490779049
+!i10b 1
+Z10 !s108 1490779049.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q3/decoder_case.vhd|
+Z12 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q3/decoder_case.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1
+Adecoder
+R2
+R3
+R4
+R5
+DEx4 work 12 decoder_case 0 22 =;UgGXj3AzEZA5V1Mb4=62
+l19
+L17
+VozCLY5imCK18mhnTkC3ik1
+!s100 AKSXhRg7]>@I36A5`7ZmB0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Edecoder_casetb
+Z15 w1490779036
+R2
+R3
+R4
+R5
+R0
+Z16 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q3/decoder_caseTB.vhd
+Z17 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q3/decoder_caseTB.vhd
+l0
+L5
+VR]_eoXVcjJg>fYRBa4cQ20
+!s100 o[@U9T1W@84ZiaBV^28hm3
+R8
+32
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q3/decoder_caseTB.vhd|
+Z19 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q3/decoder_caseTB.vhd|
+!i113 1
+R13
+R14
+Astimulus
+R2
+R3
+R4
+R5
+Z20 DEx4 work 14 decoder_casetb 0 22 R]_eoXVcjJg>fYRBa4cQ20
+l32
+L8
+Vmzja^:kl;CB186HLdGmcN2
+!s100 UCoFBF`4;42]VQ_X]8hKj2
+R8
+32
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 1
+R13
+R14

@@ -1,0 +1,8 @@
+en
+conf t
+ip dhcp excluded-address <start addr.> <end addr.>
+ip dhcp pool <name>
+	network <network addr.> <netmask>
+	default-router <ip address>
+	dns-server <ip address>
+exit

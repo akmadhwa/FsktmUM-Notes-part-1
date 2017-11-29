@@ -1,0 +1,166 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week6 Sequential/T Flip-Flop
+Easy_ctr
+Z0 w1490173309
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 5 (Week 5)/Q2
+Z4 8D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctr.vhd
+Z5 FD:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctr.vhd
+l0
+L4
+VFj2S7`dZb7l8mNo;8ciAF0
+!s100 OmeBRl:9i]8d12dJi0XLz1
+Z6 OV;C;10.4d;61
+32
+Z7 !s110 1490174743
+!i10b 1
+Z8 !s108 1490174743.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctr.vhd|
+Z10 !s107 D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctr.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1
+Aasy_ctr
+R1
+R2
+DEx4 work 7 asy_ctr 0 22 Fj2S7`dZb7l8mNo;8ciAF0
+l27
+L15
+VQ`?Z`NiZngEn>jVJ0K=Yk0
+!s100 QYTBHTC;lK7eJ;5c7Tni`2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Easy_ctrgen
+Z13 w1490174690
+R1
+R2
+R3
+Z14 8D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctrGen.vhd
+Z15 FD:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctrGen.vhd
+l0
+L4
+V?DOK3VmJ8DIDAmGIoYXF>2
+!s100 mSDnO0=B3M:ARIaQS=F:20
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctrGen.vhd|
+Z17 !s107 D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctrGen.vhd|
+!i113 1
+R11
+R12
+Aasy_ctr
+R1
+R2
+Z18 DEx4 work 10 asy_ctrgen 0 22 ?DOK3VmJ8DIDAmGIoYXF>2
+l28
+L16
+V?eK=]S7YcdLkHAHLmQ8Z`3
+!s100 cE>]CbKnlfYJ`]DoBIeD>3
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Easy_ctrtb
+Z19 w1490174037
+R1
+R2
+R3
+Z20 8D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctrTB.vhd
+Z21 FD:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctrTB.vhd
+l0
+L4
+VIJmTeI<HIgYNLZ;P9Gi?22
+!s100 [?TiIeKN@Ik8@iP`>k2`U1
+R6
+32
+R7
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctrTB.vhd|
+Z23 !s107 D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\asy_ctrTB.vhd|
+!i113 1
+R11
+R12
+Astimulus
+R1
+R2
+DEx4 work 9 asy_ctrtb 0 22 IJmTeI<HIgYNLZ;P9Gi?22
+l41
+L8
+V8]cFZg]9IYb]K:LU_VK8>1
+!s100 _GDOSFmbI7^M_h=ih]J<O1
+R6
+32
+R7
+!i10b 1
+R8
+R22
+R23
+!i113 1
+R11
+R12
+Et_ff
+Z24 w1490171034
+R1
+R2
+R3
+Z25 8D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\t_ff.vhd
+Z26 FD:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\t_ff.vhd
+l0
+L4
+V3GH?6=3EW>76HfYg7nHVz2
+!s100 A9A_SHD^;fmXQnc;TokoW3
+R6
+32
+R7
+!i10b 1
+R8
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\t_ff.vhd|
+Z28 !s107 D:\Google Drive\UM\UM Sem 4\WIC2003 Digital Design and Hardware Description\Lab-Tutorial\Tutorial 5 (Week 5)\Q2\t_ff.vhd|
+!i113 1
+R11
+R12
+At_ff
+R1
+R2
+DEx4 work 4 t_ff 0 22 3GH?6=3EW>76HfYg7nHVz2
+l18
+L15
+V2e65SJR12F43SV6f6RElS0
+!s100 BAh9Gb=Mj@883gScGEV_W3
+R6
+32
+R7
+!i10b 1
+R8
+R27
+R28
+!i113 1
+R11
+R12

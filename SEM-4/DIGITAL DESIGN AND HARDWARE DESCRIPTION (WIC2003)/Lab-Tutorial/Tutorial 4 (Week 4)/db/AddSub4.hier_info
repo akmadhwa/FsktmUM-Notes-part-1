@@ -1,0 +1,91 @@
+|XOR8
+a8[0] => oneXOR:generate_i:0:XOR4.a
+a8[1] => oneXOR:generate_i:1:XOR4.a
+a8[2] => oneXOR:generate_i:2:XOR4.a
+a8[3] => oneXOR:generate_i:3:XOR4.a
+a8[4] => oneXOR:generate_i:4:XOR4.a
+a8[5] => oneXOR:generate_i:5:XOR4.a
+a8[6] => oneXOR:generate_i:6:XOR4.a
+a8[7] => oneXOR:generate_i:7:XOR4.a
+b8[0] => oneXOR:generate_i:0:XOR4.b
+b8[1] => oneXOR:generate_i:1:XOR4.b
+b8[2] => oneXOR:generate_i:2:XOR4.b
+b8[3] => oneXOR:generate_i:3:XOR4.b
+b8[4] => oneXOR:generate_i:4:XOR4.b
+b8[5] => oneXOR:generate_i:5:XOR4.b
+b8[6] => oneXOR:generate_i:6:XOR4.b
+b8[7] => oneXOR:generate_i:7:XOR4.b
+c8[0] <= oneXOR:generate_i:0:XOR4.c
+c8[1] <= oneXOR:generate_i:1:XOR4.c
+c8[2] <= oneXOR:generate_i:2:XOR4.c
+c8[3] <= oneXOR:generate_i:3:XOR4.c
+c8[4] <= oneXOR:generate_i:4:XOR4.c
+c8[5] <= oneXOR:generate_i:5:XOR4.c
+c8[6] <= oneXOR:generate_i:6:XOR4.c
+c8[7] <= oneXOR:generate_i:7:XOR4.c
+
+
+|XOR8|oneXOR:\generate_i:7:XOR4
+a => s.IN0
+a => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|XOR8|oneXOR:\generate_i:6:XOR4
+a => s.IN0
+a => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|XOR8|oneXOR:\generate_i:5:XOR4
+a => s.IN0
+a => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|XOR8|oneXOR:\generate_i:4:XOR4
+a => s.IN0
+a => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|XOR8|oneXOR:\generate_i:3:XOR4
+a => s.IN0
+a => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|XOR8|oneXOR:\generate_i:2:XOR4
+a => s.IN0
+a => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|XOR8|oneXOR:\generate_i:1:XOR4
+a => s.IN0
+a => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|XOR8|oneXOR:\generate_i:0:XOR4
+a => s.IN0
+a => s[1].IN0
+b => s.IN1
+b => s[1].IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+

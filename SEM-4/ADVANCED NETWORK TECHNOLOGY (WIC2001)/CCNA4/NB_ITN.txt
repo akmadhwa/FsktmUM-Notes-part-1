@@ -1,0 +1,85 @@
+124-1 / Host 1
+
+192.168.1.97 255.255.255.224 192.168.1.126
+2001:DB8:ACAD:A::FF/64 FE80::1
+---------------------
+124-5  / Host 2
+
+192.168.1.98 255.255.255.224 192.168.1.126
+2001:DB8:ACAD:A::15/64 FE80::1
+---------------------
+214-1 / Host 3
+
+192.168.1.145 255.255.255.240 192.168.1.158 
+2001:DB8:ACAD:B::FF/64 FE80::1
+---------------------
+TFTP Server
+
+192.168.1.146 255.255.255.240 192.168.1.158
+2001:DB8:ACAD:B::15/64 FE80::1
+
+----------------------
+
+CS Department/Building 1
+
+en
+conf t
+hostname Middle
+banner motd $ Power Lahanat $
+security passwords min-length 10
+service password-encryption
+enable secret class12345
+ip domain-name ccnasecurity.com
+ip ssh version 2
+crypto key generate rsa
+1024
+username netadmin privilege 15 secret Cisco_CCNA5
+line con 0
+	password cisco12345
+	login
+	logging sync
+	exit
+line vty 0 15
+	transport input ssh
+	logging sync
+	login local
+	exit
+int g0/0
+	description 124-C
+	ip address 192.168.1.126 255.255.255.224
+	no shut
+	ipv6 address FE80::1 link-local
+	ipv6 address 2001:DB8:ACAD:A::1/64
+	exit
+int g0/1
+	description 214-A
+	ip address 192.168.1.158 255.255.255.240
+	no shut
+	ipv6 address FE80::1 link-local
+	ipv6 address 2001:DB8:ACAD:B::1/64
+	exit
+
+---------------------------
+
+LAB 214-A Switch / Second Floor Switch
+
+en
+conf t
+ip default-gateway 192.168.1.158
+line vty 0 4
+	password cisco12345
+	transport input telnet
+	login
+	exit
+int vlan 1
+	ip address 192.168.1.157 255.255.255.240
+	no shut
+	exit
+exit
+
+--------------------
+Copy running config to TFTP
+
+en
+copy run tftp:
+192.168.1.146

@@ -1,0 +1,12 @@
+en
+conf t
+
+vlan <vlan id> - creating vlan
+name <vlan name> - name for this vlan
+exit
+
+int vlan <vlan id> - accessing vlan interface
+ip address <ip address> <subnet mask>
+no shut / shut
+exit
+

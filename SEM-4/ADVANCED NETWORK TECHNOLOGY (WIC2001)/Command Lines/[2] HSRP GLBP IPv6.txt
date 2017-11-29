@@ -1,0 +1,119 @@
+SW1
+
+vlan 30
+vlan 40
+
+int fa0/1
+switchport mode access
+switchport access vlan 30
+int fa0/2
+switchport mode access
+switchport access vlan 40
+int fa0/23
+switchport mode trunk
+int fa0/24
+switchport mode trunk
+
+SW2
+
+vlan 30
+vlan 40
+
+int fa0/1
+switchport mode access
+switchport access vlan 30
+int fa0/2
+switchport mode access
+switchport access vlan 40
+int fa0/23
+switchport mode trunk
+int fa0/24
+switchport mode trunk
+
+R1
+ipv6 unicast-routing
+
+ipv6 router ospf 10
+router-id 1.1.1.1 
+
+track 40 interface s0/0/0 line-protocol
+
+int g0/0.30
+encapsulation dot1q 30
+ipv6 addr 2001:1:1:1::1/64
+ipv6 ospf 10 area 0
+
+standby version 2
+standby 30 ipv6 autoconfig
+standby 30 priority 105
+standby 30 preempt
+standby 30 track Serial0/0/0
+
+
+int g0/0.40
+encapsulation dot1q 40
+ipv6 addr 2001:2:2:2::1/64
+ipv6 ospf 10 area 0
+glbp 40 ipv6 autoconfig
+glbp 40 weighting track 40 decrement 10
+
+int g0/0
+no shut
+int s0/0/0
+ipv6 addr 2001:3:3:3::1/64
+ipv6 ospf 10 area 0
+no shut
+
+R2
+ipv6 unicast-routing
+ipv6 router ospf 10
+router-id 2.2.2.2 
+
+int s0/0/0
+ipv6 addr 2001:3:3:3::2/64
+ipv6 ospf 10 area 0
+no shut
+int s0/0/1
+ipv6 addr 2001:4:4:4::2/64.
+ipv6 ospf 10 area 0
+no shut
+
+R3
+
+ipv6 unicast-routing
+
+ipv6 router ospf 10
+router-id 3.3.3.3
+
+track 40 interface s0/0/0 line-protocol
+
+int g0/0.30
+encapsulation dot1q 30
+ipv6 addr 2001:1:1:1::2/64
+ipv6 ospf 10 area 0
+standby version 2
+standby 30 ipv6 autoconfig
+standby 30 preempt
+standby 30 track Serial0/0/0
+
+int g0/0.40
+encapsulation dot1q 40
+ipv6 addr 2001:2:2:2::2/64
+ipv6 ospf 10 area 0
+glbp 40 ipv6 autoconfig
+glbp 40 priority 105
+glbp 40 weighting track 20 decrement 10
+
+int g0/0
+no shut
+int s0/0/0
+ipv6 addr 2001:4:4:4::1/64
+ipv6 ospf 10 area 0
+no shut
+
+PC1	2001:1:1:1::3/64
+PC2	2001:2:2:2::3/64
+PC3	2001:1:1:1::4/64
+PC4	2001:2:2:2::4/64
+
+

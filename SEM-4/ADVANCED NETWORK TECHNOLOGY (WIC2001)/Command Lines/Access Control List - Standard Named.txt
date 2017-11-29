@@ -1,0 +1,17 @@
+R1>en
+R1# conf t
+R1(config)# ip access standard <nama list>
+R1(config-std-nacl)# permit <N. Addr> <wilcard> <--- permit network address
+R1(config-std-nacl)# permit host <ip address>
+
+R1(config)# interface <int>
+R1(config-if)# ip access-group <name ACL> in/out
+
+//untuk edit
+
+R1#show access-list <--- tengok nak tambah pada line apa (e.g. 30,40)
+R1#(config)# ip access-list standard <name>
+R1(config-std-nacl)# 30 permit <N. Addr.> <wilcard>
+R1(config-std-nacl)# 40 deny any
+
+

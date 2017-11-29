@@ -1,0 +1,36 @@
+{D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/nAdder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/nAdder.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity nAdder
+-- Compiling architecture fulladd of nAdder
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/FA.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/FA.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FA
+-- Compiling architecture add of FA
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/nAdderStruct.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/nAdderStruct.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity nAdderStruct
+-- Compiling architecture fulladd of nAdderStruct
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/nAdderTB.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/nAdderTB.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity nAdderTB
+-- Compiling architecture stimulus of nAdderTB
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/#Week5 n-bit Adder/nAdderTB.vhd(33): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}}

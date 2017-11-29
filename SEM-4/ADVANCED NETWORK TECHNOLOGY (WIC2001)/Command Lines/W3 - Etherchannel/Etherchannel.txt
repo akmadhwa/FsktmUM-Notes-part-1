@@ -1,0 +1,15 @@
+S1(config)# interface range <ports>
+///boleh buat trunk, set native vlan dulu
+S1(config-if-range)# channel-group <no.> mode <status, guna PAgP ke LAGP)
+
+S1(config)# interface port-channel <no.> <-- no. kena sama dengan channel-group
+S1(config-if)# switchport mode trunk
+S1(config-if)# switchport trunk native vlan 99
+
+
+
+
+show interface port-channel
+show etherchannel summary
+show etherchannel port-channel
+show interfaces etherchannel

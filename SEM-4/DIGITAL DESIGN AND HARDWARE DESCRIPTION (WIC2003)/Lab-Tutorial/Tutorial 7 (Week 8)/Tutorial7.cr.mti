@@ -1,0 +1,99 @@
+{D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity shiftconTB
+-- Compiling architecture stimulus of shiftconTB
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd(16): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd(37): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd(40): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd(48): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd(51): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd(62): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd(70): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd(78): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd(86): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd(94): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd(102): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd(110): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd(118): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd(126): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd(134): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity shiftcon_aTB
+-- Compiling architecture stimulus of shiftcon_aTB
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd(16): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd(37): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd(40): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd(48): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd(51): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd(62): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd(70): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd(78): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd(86): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd(94): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd(102): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd(110): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd(118): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd(126): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd(134): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd} {2 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity shiftcon_bTB
+-- Compiling architecture stimulus of shiftcon_bTB
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd(17): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd(40): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd(51): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd(54): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd(65): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd(73): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd(81): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd(89): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd(97): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd(105): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd(113): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd(121): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd(129): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd(137): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd(146): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd(149): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd(152): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd(155): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity shiftcon
+-- Compiling architecture behavioral of shiftcon
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_a.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_a.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity shiftcon_a
+-- Compiling architecture behavioral of shiftcon
+-- Loading entity shiftcon
+
+} {} {}} {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_b.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_b.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity shiftcon_b
+-- Compiling architecture behavioral of shiftcon_b
+
+} {} {}}

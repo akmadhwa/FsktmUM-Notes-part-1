@@ -1,0 +1,4 @@
+int s0/0/0
+ipv6 address <ipv6-prefix/prefix-length> eui-64(optional) <2A::/64>
+
+ipv6 enable <--- auto onfig an IPv6 link local address, automatically generate the link-local address using the Modified EUI-64 interface ID based on the interface MAC address

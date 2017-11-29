@@ -1,0 +1,44 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity rotate is
+	port (
+		CLOCK: in std_logic;
+		SW: in std_logic;
+		RST: in std_logic;
+		LEDR: out std_logic_vector (7 downto 0)
+	);
+end entity;
+
+architecture behav of rotate is
+	
+	signal s_a: std_logic_vector (7 downto 0);
+	
+	begin
+	
+	comp: process (CLOCK, RST)
+	
+		begin
+	
+			if (RST = '1') then
+				s_a <= "01000000";
+				
+			elsif (RST = '0') then
+
+				if (CLOCK'event and CLOCK ='1') then 
+				
+					if (SW="0") then
+						s_a <= (s_a(0) & s_a (7 downto 1)); --rotate right
+						
+					elsif (SW="1") then
+						s_a <= (s_a (6 downto 0) & s_a(7)); --rotate left
+						
+					end if;
+				end if;
+			end if;
+			
+	end process comp;
+	
+	LEDR <= s_a;
+	
+end behav;

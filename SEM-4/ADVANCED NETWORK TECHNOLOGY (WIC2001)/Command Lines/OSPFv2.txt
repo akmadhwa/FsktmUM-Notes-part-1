@@ -1,0 +1,12 @@
+en
+conf t
+router ospf <id>
+router-id <name>
+network <network address yang bersambung dgn interface> <wildcard = 255.255.255.255 tolak subnet mask NAdrr.> area <nombor area>
+
+R2(config)#int s0/0/0
+R2(config-if)#ip ospf hello-interval 15
+R2(config-if)#ip ospf dead-interval 60
+R2(config-if)#bandwidth <num>
+
+Router(config-rtr)#area <area num> range <network address> <subnet mask> <--- utk tunjuk summary of area

@@ -1,0 +1,7 @@
+en
+conf t
+ip route <destination address yang tak bersambung dengan router> <dest. addr. subnet mask> <destination address exit interface>
+
+ip route 192.168.0.0 255.255.255.0 fa0/1 <--- 192.168.0.0 network yang berada di sebelah router satu lagi
+
+ip route 0.0.0.0 0.0.0.0 <exit interface>

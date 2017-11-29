@@ -1,0 +1,35 @@
+en
+conf t
+hostname R3
+int g0/1
+ip address 203.6.2.3 255.255.255.0
+no shut
+int s0/0/0
+ip address 203.6.4.1 255.255.255.0
+no shut
+int s0/0/1
+ip address 203.6.13.2 255.255.255.0
+no shut
+
+
+en
+conf t
+hostname S2
+int vlan 20
+ip address 203.6.2.2 255.255.255.0
+no shut
+int f0/1
+switchport mode access
+switchport access vlan 20
+int f0/18
+switchport mode access
+switchport access vlan 20
+int range f0/2-3
+switchport mode trunk
+
+router rip
+version 2
+network 203.6.0.0
+default-information originate
+
+

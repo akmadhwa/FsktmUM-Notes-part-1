@@ -1,0 +1,30 @@
+R1(config)#aaa new-model
+------------------
+enable root view
+R1# enable view
+Password: cisco12345
+R1#
+-------------------
+Create new view <---- must enable root view first
+R1(config)# parser view <view-name>
+R1(config-view)#
+R1(config)# no parser view <viewname> <--- to delete a view
+------------------
+Associate view with an encrypted password
+R1(config-view)# secret admin1pass
+R1(config-view)#
+R1(config-view)# commands ? <-- to see available views
+------------------
+Add views
+R1(config-view)# commands exec include all show
+R1(config-view)# commands exec include all config terminal
+R1(config-view)# commands exec include all debug
+R1(config-view)# end
+-----------------
+enable view for viewname
+R1# enable view admin1
+Password: admin1pass <--- password from secret parser password
+R1# show parser view
+--------------------
+
+

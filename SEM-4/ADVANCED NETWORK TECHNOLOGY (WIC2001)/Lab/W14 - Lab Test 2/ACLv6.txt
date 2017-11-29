@@ -1,0 +1,11 @@
+en
+conf t
+ipv6 unicast-routing
+ipv6 access-list <name>
+	permit ipv6 <source prefix>
+	permit ipv6 any
+	permit ipv6 host
+	exit
+
+int <int>
+	ipv6 traffic-filter <name> in/out

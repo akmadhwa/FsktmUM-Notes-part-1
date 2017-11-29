@@ -1,0 +1,5 @@
+On - On = Yes
+Active/Passive - Active = Yes
+On/Active/Passove - Not Config = No
+On - Active = No
+Passive/On - Passive = No

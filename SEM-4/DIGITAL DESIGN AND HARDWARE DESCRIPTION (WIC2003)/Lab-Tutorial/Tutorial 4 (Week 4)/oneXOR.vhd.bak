@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity OneXOR is
+	port (
+		a, b: in std_logic;
+		c: out std_logic
+	);
+	
+end OneXOR;
+
+architecture func of OneXOR is
+
+signal s: std_logic_vector(1 downto 0);
+
+begin
+
+	s(0) <= NOT(a AND b);
+	s(1) <= a OR b;
+	c <= a AND b;
+	
+end func;

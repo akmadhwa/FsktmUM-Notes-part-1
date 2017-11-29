@@ -1,0 +1,470 @@
+Site-1 / Bldg-1
+
+en
+conf t
+hostname Bldg-1
+no ip domain-lookup
+enable secret class
+
+line console 0
+password cisco
+login
+logging sync
+exec-timeout 10 0
+exit
+
+line vty 0 15
+password cisco
+login
+exit
+
+banner motd $Warning!$
+service password-encryption
+
+int s0/0/0
+ip address 192.168.100.21 255.255.255.252
+clock rate 128000
+bandwidth 128
+no shut
+exit
+
+int s0/0/1
+ip address 192.168.100.29 255.255.255.252
+clock rate 128000
+no shut
+exit
+
+int g0/0
+ip address 192.168.8.1 255.255.255.0
+no shut
+exit
+
+int g0/1
+ip address 192.168.9.1 255.255.255.0
+no shut
+exit
+
+router eigrp 100
+network 192.168.8.0 0.0.0.255
+network 192.168.9.0 0.0.0.255
+network 192.168.100.20 0.0.0.3
+network 192.168.100.28 0.0.0.3
+passive-interface g0/0
+passive-interface g0/1
+no auto-summary
+exit
+
+------------------------------------
+Site-2 / Bldg-2 (R3)
+
+en
+conf t
+
+int s0/0/0
+ip address 192.168.100.30 255.255.255.252
+no shut
+exit
+
+int s0/0/1
+ip address 192.168.100.38 255.255.255.252
+no shut
+exit
+
+int g0/1.2
+encapsulation dot1Q 2
+ip address 10.10.2.1 255.255.255.0
+exit
+
+int g0/1.4
+encapsulation dot1Q 4
+ip address 10.10.4.1 255.255.255.0
+exit
+
+int g0/1.8
+encapsulation dot1Q 8
+ip address 10.10.8.1 255.255.255.0
+exit
+
+int g0/1.15
+encapsulation dot1Q 15
+ip address 10.10.15.1 255.255.255.0
+exit
+
+int g0/1.25
+encapsulation dot1Q 25
+ip address 10.10.25.1 255.255.255.0
+exit
+
+int g0/1
+no shut
+exit
+
+router eigrp 100
+network 10.10.2.0 0.0.0.255
+network 10.10.4.0 0.0.0.255
+network 10.10.8.0 0.0.0.255
+network 10.10.15.0 0.0.0.255
+network 192.168.100.28 0.0.0.3
+network 192.168.100.36 0.0.0.3
+passive-interface g0/1.2
+passive-interface g0/1.4
+passive-interface g0/1.8
+passive-interface g0/1.15
+passive-interface g0/1.25
+no auto-summary
+exit
+
+int s0/0/0
+ip summary-address eigrp 100 10.10.0.0 255.255.240.0
+exit
+
+int s0/0/1
+ip summary-address eigrp 100 10.10.0.0 255.255.240.0
+exit
+
+access-list 1 permit 10.10.15.0 0.0.0.255
+
+int g0/1.25
+ip access-group 1 out
+exit
+
+ip dhcp excluded-address 10.10.2.1 10.10.2.5
+ip dhcp excluded-address 10.10.4.1 10.10.4.5
+ip dhcp excluded-address 10.10.8.1 10.10.8.5
+
+ip dhcp pool vlan2pool
+network 10.10.2.0 255.255.255.0
+default-router 10.10.2.1
+dns-server 192.168.200.225
+exit
+
+ip dhcp pool vlan4pool
+network 10.10.4.0 255.255.255.0
+default-router 10.10.4.1
+dns-server 192.168.200.225
+exit
+
+ip dhcp pool vlan8pool
+network 10.10.8.0 255.255.255.0
+default-router 10.10.8.1
+dns-server 192.168.200.225
+exit
+
+------------------------------------
+HQ / Main(R2)
+
+en
+conf t
+
+int s0/0/0
+description Connected to Site-1
+bandwidth 128
+ip address 192.168.100.22 255.255.255.252
+no shut
+exit
+
+int s0/0/1
+description Connected to Site-2
+ip address 192.168.100.37 255.255.255.252
+clock rate 128000
+no shut
+exit
+
+
+int s0/1/0
+description Connected to Internet
+ip address 203.0.113.18 255.255.255.248
+no shut
+exit
+
+router eigrp 100
+network 192.168.100.20 0.0.0.3
+network 192.168.100.36 0.0.0.3
+passive-interface s0/1/0
+no auto-summary
+exit
+
+ip route 0.0.0.0 0.0.0.0 s0/1/0
+
+router eigrp 100
+redistribute static
+exit
+
+ip access-list standard telnetBlock
+permit host 198.51.100.5
+exit
+
+line vty 0 15
+access-class telnetBlock in
+exit
+
+access-list 101 permit icmp host 198.51.100.5 any echo
+access-list 101 deny icmp any any echo
+access-list 101 permit ip any any
+
+int s0/1/0
+ip access-group 101 in
+
+--------------------------------
+SW-A / FL-A
+
+en
+conf t
+
+vlan 2
+name dept1
+vlan 4
+name dept2
+vlan 8
+name dept3
+vlan 15
+name IT
+vlan 25
+name manage
+vlan 99
+name safe
+exit
+
+int fa0/5
+switchport mode access
+switchport access vlan 2
+exit
+
+int fa0/10
+switchport mode access
+switchport access vlan 4
+exit
+
+int fa0/15
+switchport mode access
+switchport access vlan 8
+exit
+
+int fa0/24
+switchport mode access
+switchport access vlan 15
+exit
+
+int vlan 25
+ip address 10.10.25.254 255.255.255.0
+no shut
+exit
+
+ip default-gateway 10.10.25.1
+
+int range fa0/1-2
+switchport mode trunk
+channel-group 1 mode active
+exit
+
+int port-channel 1
+switchport mode trunk
+exit
+
+int range fa0/3-4
+switchport mode trunk
+channel-group 2 mode active
+exit
+
+int port-channel 2
+switchport mode trunk
+exit
+
+spanning-tree mode rapid-pvst
+
+spanning-tree vlan 2 root primary
+spanning-tree vlan 4 root primary
+spanning-tree vlan 8 root secondary
+spanning-tree vlan 15 root secondary
+
+int range fa0/6-9, fa0/11-14, fa0/16-23, g0/1-2
+shutdown
+switchport mode access
+switchport access vlan 99
+exit
+
+int range fa0/5, fa0/10, fa0/15, fa0/24
+switchport port-security
+switchport port-security maximum 2
+switchport port-security mac-address sticky
+switchport port-security violation restrict
+exit
+
+
+-----------------------------------
+SW-B / FL-B
+
+en
+conf t
+
+vlan 2
+name dept1
+vlan 4
+name dept2
+vlan 8
+name dept3
+vlan 15
+name IT
+vlan 25
+name manage
+vlan 99
+name safe
+exit
+
+
+int vlan 25
+ip address 10.10.25.253 255.255.255.0
+no shut
+exit
+
+ip default-gateway 10.10.25.1
+
+int range fa0/3-4
+switchport mode trunk
+channel-group 2 mode active
+exit
+
+int port-channel 2
+switchport mode trunk
+exit
+
+int range fa0/5-6
+switchport mode trunk
+channel-group 3 mode active
+exit
+
+int port-channel 3
+switchport mode trunk
+exit
+
+int g0/1
+switchport mode trunk
+exit
+
+spanning-tree mode rapid-pvst
+
+hostname SW-B
+
+ip domain-name ccnaPTSA.com
+crypto key generate rsa
+1024
+ip ssh version 2
+username netadmin secret SSHsecret9
+
+line vty 0 15
+transport input ssh
+login local
+exit
+
+-----------------------------------
+SW-C / FL-C
+
+
+en
+conf t
+
+vlan 2
+name dept1
+vlan 4
+name dept2
+vlan 8
+name dept3
+vlan 15
+name IT
+vlan 25
+name manage
+vlan 99
+name safe
+exit
+
+int fa0/7
+switchport mode access
+switchport access vlan 2
+exit
+
+
+int fa0/10
+switchport mode access
+switchport access vlan 4
+exit
+
+
+int fa0/15
+switchport mode access
+switchport access vlan 8
+exit
+
+int fa0/24
+switchport mode access
+switchport access vlan 15
+exit
+
+int vlan 25
+ip address 10.10.25.252 255.255.255.0
+no shut
+exit
+
+ip default-gateway 10.10.25.1
+
+int range fa0/1-2
+switchport mode trunk
+channel-group 1 mode active
+exit
+
+int port-channel 1
+switchport mode trunk
+exit
+
+int range fa0/5-6
+switchport mode trunk
+channel-group 3 mode passive
+exit
+
+spanning-tree mode rapid-pvst
+
+spanning-tree vlan 8 root primary
+spanning-tree vlan 15 root primary
+spanning-tree vlan 2 root secondary
+spanning-tree vlan 4 root secondary
+
+int range fa0/7, fa0/10, fa0/15, fa0/24
+spanning-tree portfast
+spanning-tree bpduguard enable
+exit
+
+int range fa0/1-2, fa0/5-6
+no shut
+exit
+
+int range fa0/7, fa0/10, fa0/15, fa0/24
+no shut
+exit
+
+------------------------------------
+Hosts on VLANs 2, 4, and 8 should be configured to receive addresses dynamically over DHCP.
+------------------------------------
+Hosts on VLAN 15 should be addressed statically as indicated in the addressing table. Once configured, the hosts should be able to ping hosts on other networks.
+
+Admin-AVLAN15 / Admin-A / IT-A / Host 1
+10.10.15.10
+255.255.255.0
+10.10.15.1
+192.168.200.225
+
+Admin-BVLAN15 / Admin-B / IT-B / Host 2
+10.10.15.11
+255.255.255.0
+10.10.15.1
+192.168.200.225
+
+--------------------------------------
+
+Oper 1A / Lab A-1
+192.168.8.10
+255.255.255.0
+192.168.8.1
+
+Clerck 1C / Lab B-2
+192.168.9.10
+255.255.255.0
+192.168.9.1

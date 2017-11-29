@@ -1,0 +1,55 @@
+set_global_assignment -name TOP_LEVEL_ENTITY LEDswitch
+set_location_assignment PIN_G18 -to HEX0[0]
+set_location_assignment PIN_F22 -to HEX0[1]
+set_location_assignment PIN_E17 -to HEX0[2]
+set_location_assignment PIN_L26 -to HEX0[3]
+set_location_assignment PIN_L25 -to HEX0[4]
+set_location_assignment PIN_J22 -to HEX0[5]
+set_location_assignment PIN_H22 -to HEX0[6]
+
+set_location_assignment PIN_M24 -to HEX1[0]
+set_location_assignment PIN_Y22 -to HEX1[1]
+set_location_assignment PIN_W21 -to HEX1[2]
+set_location_assignment PIN_W22 -to HEX1[3]
+set_location_assignment PIN_W25 -to HEX1[4]
+set_location_assignment PIN_U23 -to HEX1[5]
+set_location_assignment PIN_U24 -to HEX1[6]
+
+set_location_assignment PIN_AA25 -to HEX2[0]
+set_location_assignment PIN_AA26 -to HEX2[1]
+set_location_assignment PIN_Y25 -to HEX2[2]
+set_location_assignment PIN_W26 -to HEX2[3]
+set_location_assignment PIN_Y26 -to HEX2[4]
+set_location_assignment PIN_W27 -to HEX2[5]
+set_location_assignment PIN_W28 -to HEX2[6]
+
+set_location_assignment PIN_AB28 -to SW[0]
+set_location_assignment PIN_AC28 -to SW[1]
+set_location_assignment PIN_AC27 -to SW[2]
+set_location_assignment PIN_AD27 -to SW[3]
+set_location_assignment PIN_AB27 -to SW[4]
+set_location_assignment PIN_AC26 -to SW[5]
+set_location_assignment PIN_AD26 -to SW[6]
+set_location_assignment PIN_AB26 -to SW[7]
+set_location_assignment PIN_AC25 -to SW[8]
+set_location_assignment PIN_AB25 -to SW[9]
+
+set_location_assignment PIN_G19 -to LEDR[0]
+set_location_assignment PIN_F19 -to LEDR[1]
+
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name EDA_SIMULATION_TOOL "<None>"
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LAST_QUARTUS_VERSION 16.0.0
+set_global_assignment -name VHDL_FILE Seg7.vhd
+set_global_assignment -name VHDL_FILE mux4to1.vhd
+set_global_assignment -name VHDL_FILE LEDswitch.vhd
+set_global_assignment -name VHDL_FILE DEC.vhd
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,0 +1,229 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 6 (Week 6)/Q3
+Eshiftcon
+w1491798142
+Z0 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z1 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z2 dD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)
+8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon.vhd
+FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon.vhd
+l0
+L4
+V[jd:SBbo^UA:2^OLa?SNU2
+!s100 YgFfc`T;fLZ5H<3X[C2iL0
+Z3 OV;C;10.4d;61
+32
+Z4 !s110 1491801443
+!i10b 1
+Z5 !s108 1491801443.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon.vhd|
+!s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon.vhd|
+!i113 1
+Z6 o-work work -2002 -explicit
+Z7 tExplicit 1
+Abehavioral
+Z8 w1491801134
+R0
+R1
+DEx4 work 8 shiftcon 0 22 [jd:SBbo^UA:2^OLa?SNU2
+Z9 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_a.vhd
+Z10 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_a.vhd
+l15
+L11
+V<e[4]zEPlV5jWE5<l18013
+!s100 ?]`=N4j81h0`b@zUA`hEh2
+R3
+32
+Z11 !s110 1491801444
+!i10b 1
+R5
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_a.vhd|
+Z13 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_a.vhd|
+!i113 1
+R6
+R7
+Eshiftcon_a
+R8
+R0
+R1
+R2
+R9
+R10
+l0
+L4
+VObTgG]GJ]eaKL]XdmDo@i0
+!s100 n8Vl<fndK?:9580JWTlCF3
+R3
+32
+R11
+!i10b 1
+R5
+R12
+R13
+!i113 1
+R6
+R7
+Eshiftcon_atb
+Z14 w1491801391
+R0
+R1
+R2
+Z15 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd
+Z16 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd
+l0
+L4
+VefoPaBX>@57[7OIa>ED2^3
+!s100 efF?l<=zHKn^[JES]3mJn2
+R3
+32
+R11
+!i10b 1
+Z17 !s108 1491801444.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd|
+Z19 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_aTB.vhd|
+!i113 1
+R6
+R7
+Astimulus
+R0
+R1
+DEx4 work 12 shiftcon_atb 0 22 efoPaBX>@57[7OIa>ED2^3
+l22
+L7
+VJL>HgbcBU_g0i_QKf?kAB2
+!s100 2M_fd^AnQ>b<L3GQElYBY3
+R3
+32
+R11
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R6
+R7
+Eshiftcon_b
+Z20 w1491801375
+R0
+R1
+R2
+Z21 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_b.vhd
+Z22 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_b.vhd
+l0
+L4
+VjT9PPiVg;k9V@[EALXhCF3
+!s100 5g=<]AYiJ4LRzYOe8jl6P0
+R3
+32
+Z23 !s110 1491801445
+!i10b 1
+R17
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_b.vhd|
+Z25 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_b.vhd|
+!i113 1
+R6
+R7
+Abehavioral
+R0
+R1
+DEx4 work 10 shiftcon_b 0 22 jT9PPiVg;k9V@[EALXhCF3
+l16
+L12
+VIR4:GWHaTzihOloHDeSDE3
+!s100 E1U2INaW0K9KA1z<ZhH3V3
+R3
+32
+R23
+!i10b 1
+R17
+R24
+R25
+!i113 1
+R6
+R7
+Eshiftcon_btb
+Z26 w1491801441
+R0
+R1
+R2
+Z27 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd
+Z28 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd
+l0
+L4
+VlcVLm_k0DQchhaWPH`EPM0
+!s100 1ZjdIZLVcDz8D:<ZI_d0@2
+R3
+32
+R23
+!i10b 1
+Z29 !s108 1491801445.000000
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd|
+Z31 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftcon_bTB.vhd|
+!i113 1
+R6
+R7
+Astimulus
+R0
+R1
+DEx4 work 12 shiftcon_btb 0 22 lcVLm_k0DQchhaWPH`EPM0
+l24
+L7
+VZWnnPo5IF:GHIW[n<`k5i3
+!s100 Ka7B?XN@5hR_0h>YH@]4[2
+R3
+32
+R23
+!i10b 1
+R29
+R30
+R31
+!i113 1
+R6
+R7
+Eshiftcontb
+Z32 w1491799006
+R0
+R1
+R2
+Z33 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd
+Z34 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd
+l0
+L4
+V;HFEba[3`XffjD?OYHFJh2
+!s100 3RSA^@1D0jjnXgTej8Tf[3
+R3
+32
+R4
+!i10b 1
+R5
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd|
+Z36 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 7 (Week 8)/shiftconTB.vhd|
+!i113 1
+R6
+R7
+Astimulus
+R0
+R1
+DEx4 work 10 shiftcontb 0 22 ;HFEba[3`XffjD?OYHFJh2
+l22
+L7
+VY6?RCijjKW6YG<QciSUhN3
+!s100 _bEazIPj]0C=1n70=@c9_1
+R3
+32
+R4
+!i10b 1
+R5
+R35
+R36
+!i113 1
+R6
+R7

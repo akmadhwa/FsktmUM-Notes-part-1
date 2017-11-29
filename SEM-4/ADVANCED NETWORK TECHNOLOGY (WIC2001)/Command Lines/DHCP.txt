@@ -1,0 +1,6 @@
+R1(config)#ip dhcp pool VLAN10 <--- nama
+R1(dhcp-config)#default-router 172.17.10.1
+R1(dhcp-config)#network 172.17.10.1 255.255.255.0
+exit
+
+R1(config)#ip dhcp excluded-address <min range> <max range> <--- tak bagi DHCP guna addresses ini

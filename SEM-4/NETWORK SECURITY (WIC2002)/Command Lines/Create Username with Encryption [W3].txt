@@ -1,0 +1,1 @@
+R1(config)# username user01 algorithm-type scrypt secret user01pass

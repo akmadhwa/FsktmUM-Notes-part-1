@@ -1,0 +1,44 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.conversions.all;
+---use ieee.numeric_std.all;
+
+entity converter is
+	port (
+		clk, rst, load: in std_ulogic;
+		x: in std_ulogic_vector(7 downto 0);
+		xout, aout, bout, cout: out std_ulogic_vector(7 downto 0)
+	);
+	
+end converter;
+
+architecture behavior of converter is
+
+	begin
+	
+		process (rst, clk)
+			variable x1, a2, b2, z2: integer range 0 to 255;
+			
+			begin
+			
+				if rst = '1' then
+					x1 := 0;
+				elsif rising_edge(clk) then
+					if load = '1' then
+						x1: to_unsigned1(x);
+					else
+						a2 := x1/5;
+					b2 := 5*a2;
+					z2 := x1-b2;
+					end if;
+				end if;
+				
+				xout <= to_vector(8, x1);
+				aout <= to_vector(8, a2);
+				bout <= to_vector(8, b2);
+				cout <= to_vector(8, z2);
+				
+		end process;
+		
+end behavior;
+				

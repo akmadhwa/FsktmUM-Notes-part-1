@@ -1,0 +1,6 @@
+R3# copy scp: flash:
+Address or name of remote host []? 10.1.1.1 < --- ip address of SCP server
+Source username [R3]? admin
+Source filename []? R1-Config
+Destination filename [R1-Config]? [Enter]
+Password: cisco12345

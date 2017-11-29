@@ -1,0 +1,6 @@
+R3(config)# ip domain-name cisco.com
+R3(config)# crypto key generate rsa modulus 1024
+ip ssh version 2
+R3(config)# line vty 0 4
+R3(config-line)# login local
+R3(config-line)# transport input ssh

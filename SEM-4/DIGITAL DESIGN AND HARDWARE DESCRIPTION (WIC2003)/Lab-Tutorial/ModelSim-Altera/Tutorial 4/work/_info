@@ -1,0 +1,187 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/altera_lite/16.0
+Eadder16
+w1489379959
+Z0 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z1 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z2 dD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/ModelSim-Altera/Tutorial 4
+8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/Adder16.vhd
+FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/Adder16.vhd
+l0
+L4
+V5TUjPn5>a0QIPnl?ZjUDj2
+!s100 L=>MG5Z8Rn?IooTi17AGL0
+Z3 OV;C;10.4d;61
+32
+!s110 1489380116
+!i10b 1
+!s108 1489380116.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/Adder16.vhd|
+!s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/Adder16.vhd|
+!i113 1
+Z4 o-work work -2002 -explicit
+Z5 tExplicit 1
+Eadder4
+Z6 w1489379904
+R0
+R1
+R2
+Z7 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/Adder4.vhd
+Z8 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/Adder4.vhd
+l0
+L4
+VR^f7ZXFhEgOLM11_W^45n0
+!s100 meZ5UfFG]A^V^=37[eg6f0
+R3
+32
+Z9 !s110 1489380117
+!i10b 1
+Z10 !s108 1489380117.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/Adder4.vhd|
+Z12 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/Adder4.vhd|
+!i113 1
+R4
+R5
+Afulladd
+R0
+R1
+DEx4 work 6 adder4 0 22 R^f7ZXFhEgOLM11_W^45n0
+l28
+L15
+VW0^O2me@Z`:RzZ4Ia5UKQ0
+!s100 I5`_R75ei<G9S^1JI8`l93
+R3
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R4
+R5
+Efa
+Z13 w1489379137
+R0
+R1
+R2
+Z14 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/FA.vhd
+Z15 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/FA.vhd
+l0
+L4
+V`zH933E=BZnSOcX@icB6T1
+!s100 7HRKQhBQY3^coYCf^U][C3
+R3
+32
+R9
+!i10b 1
+R10
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/FA.vhd|
+Z17 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/FA.vhd|
+!i113 1
+R4
+R5
+Aadd
+R0
+R1
+DEx4 work 2 fa 0 22 `zH933E=BZnSOcX@icB6T1
+l14
+L12
+VT9dZN^:^G_CP=fSkJHdP`1
+!s100 ;fY0C@`dM[>1VcQ<8=SB40
+R3
+32
+R9
+!i10b 1
+R10
+R16
+R17
+!i113 1
+R4
+R5
+Eonexor
+Z18 w1489379045
+R0
+R1
+R2
+Z19 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/oneXOR.vhd
+Z20 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/oneXOR.vhd
+l0
+L4
+Va6C[ET_?L]4A9mT>nEn;[1
+!s100 D<2GZBizgc5k^Yn:H9G;c3
+R3
+32
+R9
+!i10b 1
+R10
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/oneXOR.vhd|
+Z22 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/oneXOR.vhd|
+!i113 1
+R4
+R5
+Afunc
+R0
+R1
+DEx4 work 6 onexor 0 22 a6C[ET_?L]4A9mT>nEn;[1
+l16
+L12
+VH625aPnN8b0WX5O9^IE:N1
+!s100 AW45oKFaQ_eiV_8ffmGAo3
+R3
+32
+R9
+!i10b 1
+R10
+R21
+R22
+!i113 1
+R4
+R5
+Exor4
+Z23 w1489379273
+R0
+R1
+R2
+Z24 8D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/XOR4.vhd
+Z25 FD:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/XOR4.vhd
+l0
+L4
+VZ7`=^_=Ze2ReHNI_ZZ18]1
+!s100 FM^_bL9U]LK]KV@0mZofI3
+R3
+32
+R9
+!i10b 1
+R10
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/XOR4.vhd|
+Z27 !s107 D:/Google Drive/UM/UM Sem 4/WIC2003 Digital Design and Hardware Description/Lab-Tutorial/Tutorial 4 (Week 4)/XOR4.vhd|
+!i113 1
+R4
+R5
+Afullxor
+R0
+R1
+DEx4 work 4 xor4 0 22 Z7`=^_=Ze2ReHNI_ZZ18]1
+l25
+L12
+V`g^UK9V3KjEa7hA^TG@]N3
+!s100 404GU6Ym3U:aE0IJSdP3l0
+R3
+32
+R9
+!i10b 1
+R10
+R26
+R27
+!i113 1
+R4
+R5

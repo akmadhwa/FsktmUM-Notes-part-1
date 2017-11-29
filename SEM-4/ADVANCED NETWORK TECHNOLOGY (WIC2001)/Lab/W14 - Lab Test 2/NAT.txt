@@ -1,0 +1,21 @@
+en
+conf t
+
+dynamic NAT
+
+ip access-list standard NAT
+permit <network addr.> <wildcard>
+exit
+
+ip nat pool HQ <start addr.> <end addr.> netmask <subnet mask>
+
+ip nat inside source list NAT pool HQ
+
+int g0/1
+ip nat inside
+
+@
+
+static NAT
+
+ip nat inside source static <private addr.> <public addr.>

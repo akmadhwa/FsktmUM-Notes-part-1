@@ -1,0 +1,52 @@
+|asy_ctrGen
+r => t_ff:generate_n:3:FF.r
+r => t_ff:generate_n:2:FF.r
+r => t_ff:generate_n:1:FF.r
+r => t_ff:generate_n:0:FF.r
+high_in => t_ff:generate_n:3:FF.t
+high_in => t_ff:generate_n:2:FF.t
+high_in => t_ff:generate_n:1:FF.t
+high_in => t_ff:generate_n:0:FF.t
+clk => t_ff:generate_n:0:FF.clk
+q[0] <= t_ff:generate_n:0:FF.q
+q[1] <= t_ff:generate_n:1:FF.q
+q[2] <= t_ff:generate_n:2:FF.q
+q[3] <= t_ff:generate_n:3:FF.q
+qbar[0] <= t_ff:generate_n:0:FF.qbar
+qbar[1] <= t_ff:generate_n:1:FF.qbar
+qbar[2] <= t_ff:generate_n:2:FF.qbar
+qbar[3] <= t_ff:generate_n:3:FF.qbar
+
+
+|asy_ctrGen|t_ff:\generate_n:3:FF
+r => s_q.ACLR
+t => s_q.ENA
+clk => s_q.CLK
+q <= s_q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= s_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|asy_ctrGen|t_ff:\generate_n:2:FF
+r => s_q.ACLR
+t => s_q.ENA
+clk => s_q.CLK
+q <= s_q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= s_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|asy_ctrGen|t_ff:\generate_n:1:FF
+r => s_q.ACLR
+t => s_q.ENA
+clk => s_q.CLK
+q <= s_q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= s_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|asy_ctrGen|t_ff:\generate_n:0:FF
+r => s_q.ACLR
+t => s_q.ENA
+clk => s_q.CLK
+q <= s_q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= s_q.DB_MAX_OUTPUT_PORT_TYPE
+
+

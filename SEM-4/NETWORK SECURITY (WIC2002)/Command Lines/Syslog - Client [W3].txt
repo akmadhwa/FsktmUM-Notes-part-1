@@ -1,0 +1,12 @@
+Configure the routers to identify the remote host (Syslog Server) that will receive logging messages.
+
+R1(config)#logging host 192.168.1.6 <--- syslog server
+R1(config)#logging on <--- Enable logging to all enabled destinations
+R1(config)#logging console <--- Set console logging parameters
+R1# clock set 01:20:00 8 march 2015 <--- set clock
+R1(config)#service timestamps log datetime msec
+
+-----------------
+enable IPS syslog
+
+R1(config)# ip ips notify log

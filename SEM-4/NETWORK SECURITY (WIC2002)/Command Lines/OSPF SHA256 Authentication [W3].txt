@@ -1,0 +1,11 @@
+R1(config)# key chain NetAcad
+R1(config-keychain)# key 1
+R1(config-keychain-key)# key-string CCNASkeystring
+R1(config-keychain-key)#cryptographic-algorithm hmac-sha-256 <--- guna SHA256 encryption
+
+-----------------
+Step 2: Configure the serial interfaces to use OSPF authentication
+R1(config)# interface s0/0/0
+R1(config-if)# ip ospf authentication key-chain NetAcad
+R1(config)#
+
