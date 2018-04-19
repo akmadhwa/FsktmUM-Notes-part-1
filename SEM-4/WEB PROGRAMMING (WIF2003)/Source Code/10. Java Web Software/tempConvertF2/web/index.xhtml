@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- welcome.xhtml - the initial document for the tempConvertF2 project.
+                   Displays a text box to collect a temperature in 
+                   Celsius from the user, which it then converts to
+                   Fahrenheit with the UserBean method called when the 
+                   Convert button is clicked.
+     -->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title> Initial document for tempConvertF2 </title>
+    </h:head>
+    <h:body>
+        <h2> Welcome to the Faces temperature converter </h2>
+        <h:form>
+            <p>
+            Enter a temperature in Celsius:
+            <h:inputText size = "4"  value = "#{userBean.celsius}" />
+            <br /><br />
+            <h:commandButton value ="Convert to Fahrenheit"
+                             action ="#{userBean.convert}" />
+            <br /><br />
+            The equivalent temperature in Fahrenheit is:
+            <h:outputText value ="#{userBean.fahrenheit}" />
+            </p>
+        </h:form>
+    </h:body>
+</html>
+

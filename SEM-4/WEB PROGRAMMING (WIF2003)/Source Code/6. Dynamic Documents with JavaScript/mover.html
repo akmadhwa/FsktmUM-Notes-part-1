@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- mover.html
+     Uses mover.js to move an image within a document
+     -->
+<html lang = "en">
+  <head>
+    <title> Moving elements </title>
+    <meta charset = "utf-8" />
+    <script type = "text/javascript"  src = "mover.js" >
+    </script>
+  </head>
+  <body>
+    <form action = "">
+      <p>
+        <label>
+          x coordinate: 
+          <input type = "text"  id = "leftCoord" size = "3" />
+        </label>
+        <br />
+        <label>
+          y coordinate: 
+          <input type = "text"  id = "topCoord" size = "3" />
+        </label>
+        <br />
+        <input type = "button"  value = "Move it"
+               onclick = 
+                 "moveIt('saturn', 
+                   document.getElementById('topCoord').value, 
+                   document.getElementById('leftCoord').value)" />
+      </p>
+    </form>
+    <div id = "saturn"  style = "position: absolute;
+         top: 115px; left: 0;">
+      <img src = "saturn.png"  
+           alt = "(Pictures of Saturn)" /> 
+    </div>
+  </body>
+</html>

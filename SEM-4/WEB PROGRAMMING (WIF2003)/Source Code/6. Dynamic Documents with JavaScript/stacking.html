@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- stacking.html
+     Uses stacking.js
+     Illustrates dynamic stacking of images
+     -->
+<html lang = "en">
+  <head>
+    <title> Dynamic stacking of images </title>
+    <meta charset = "utf-8" />
+    <script type = "text/javascript"  src = "stacking.js" >
+    </script>
+    <style type = "text/css">
+      .plane1 {position: absolute; 
+               top: 0; left: 0; z-index: 0;}
+      .plane2 {position: absolute; 
+               top: 50px; left: 50px; z-index: 0;}
+      .plane3 {position: absolute;
+               top: 100px; left: 100px; z-index: 0;}
+    </style>
+  </head>
+  <body>
+    <p>
+      <img class = "plane1"  id = "plane1"  height = "300"
+           width = "450"  src = "plane1.jpg" 
+           alt = "(Picture of an airplane)" 
+           onclick = "toTop('plane1')" />
+      <img class = "plane2"  id = "plane2"  height = "300"
+           width = "450"  src = "plane2.jpg"
+           alt = "(Picture of an airplane)"
+           onclick = "toTop('plane2')" />
+      <img class = "plane3"  id = "plane3"  height = "300"
+           width = "450"  src = "plane3.jpg"
+           alt = "(Picture of an airplane)"
+           onclick = "toTop('plane3')" />
+    </p>
+  </body>
+</html>

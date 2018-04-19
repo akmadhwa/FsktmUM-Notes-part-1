@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- cascade.html
+     An example to illustrate the three levels
+     of style sheets
+     -->
+<html lang = "en">
+  <head> 
+    <title> Style sheet levels </title>
+    <meta charset = "utf-8" />
+    <link rel = "stylesheet"  type = "text/css"
+          href = "cstyle.css" />
+    <style type = "text/css">
+      p.docstyle {font-size: 1.2em;}
+    </style>   
+  </head>
+  <body>
+    <p> 
+      Now is the time
+    </p>
+    <p class = "docstyle">
+      for all good men
+    </p>
+    <p class = "docstyle"  style = "font-size: 1.6em">
+      to come to the aid
+    </p>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- anywhere.html
+     Display a message when the mouse button is pressed,
+     no matter where it is on the screen 
+     -->
+<html lang = "en">
+  <head>
+    <title> Sense events anywhere </title>
+    <meta charset = "utf-8" />
+    <script type = "text/javascript"  src = "anywhere.js" >
+    </script>
+  </head>
+  <body onmousedown = "displayIt(event);"
+        onmouseup = "hideIt();">
+    <p>
+      <span id= "message"  
+            style = "color: red; visibility: hidden;
+                     position: relative;
+                     font-size: 1.7em; font-style: italic;
+                     font-weight: bold;">
+         Please don't click here! 
+      </span>
+      <br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br />
+    </p>
+  </body>
+</html>
