@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- popcornA.html 
+     This describes popcorn sales form page which uses
+     Ajax and the zip code to fill in the city and state
+     of the customer's address
+     -->
+<html lang = "en">
+  <head> <title> Popcorn Sales Form (Ajax) </title>
+    <style type = "text/css">
+      img {position: absolute; left: 400px;  top: 50px;}
+    </style>
+    <script type = "text/JavaScript" src = "scripts/popcornA.js">
+    </script>
+    <meta charset = "utf-8" />
+  </head>
+  <body>
+    <h2> Welcome to Millenium Gynmastics Booster Club Popcorn 
+         Sales 
+    </h2>
+
+    <form action = "">
+
+<!-- A borderless table of text widgets for name and address -->
+
+      <table>
+        <tr>
+          <td> Buyer's Name: </td>  
+          <td> <input type = "text"  name = "name" 
+                      size = "30" />
+          </td>
+        </tr>
+        <tr>
+          <td> Street Address: </td>
+          <td> <input type = "text"  name = "street"  
+                      size = "30" />
+          </td>
+        </tr>
+        <tr>
+          <td> Zip code: </td>
+          <td> <input type = "text"  name = "zip"
+                      size = "10"  
+                      onblur = "getPlace(this.value)" />
+          </td>
+        </tr>
+        <tr>
+          <td> City </td>
+          <td> <input type = "text"  name = "city"  
+                      id = "city"  size = "30" />
+          </td>
+        </tr>
+        <tr>
+          <td> State </td>
+          <td> <input type = "text"  name = "state"  
+                      id = "state"  size = "30" />
+          </td>
+        </tr>
+      </table> 
+ 
+      <img src = "image/popcorn.png"  
+           alt = "picture of popcorn" 
+           width = "150" height = "150" />
+      <p />
+       
+<!-- The submit and reset buttons -->
+
+      <p>
+        <input type = "submit"  value = "Submit Order" />
+        <input type = "reset"  value = "Clear Order Form" />
+      </p>
+    </form>
+  </body>
+</html>

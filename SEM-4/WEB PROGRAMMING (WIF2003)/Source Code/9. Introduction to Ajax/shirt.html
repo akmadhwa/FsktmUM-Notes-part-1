@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- shirt.html
+     Using Ajax to get the available colors of shirts
+     -->
+<html lang = "en">
+  <head> 
+    <title> Shirt orders </title>
+    <meta charset = "utf-8" />
+    <script type = "text/javascript"  
+            src = "dojo2.js">
+    </script>
+    <script type = "text/javascript"  src = "shirt.js">
+    </script>
+    <script type = "text/javascript">
+       dojo.require("dojo.io.*");
+    </script>
+
+    <link rel = "stylesheet"  type = "text/css"
+          href = "shirtstyles.css" />
+  </head>
+  <body>
+    <h3> Shirt Style 425 - broadcloth, short sleeve,
+         button-down collar </h3>
+    <form>
+      Size selection: 
+      <select name = "sizes"  onchange = "getColors(this.value)" >
+        <option value = ""> 00 </option>
+        <option value = "14.5"> 14 &frac12; </option>
+        <option value = "15"> 15 </option>
+        <option value = "15.5"> 15 &frac12; </option>
+        <option value = "16"> 16 </option>
+        <option value = "16.5"> 16 &frac12; </option>
+        <option value = "17"> 17 </option> 
+        <option value = "17.5"> 17 &frac12; </option> 
+        <option value = "18"> 18 </option>
+      </select>
+
+      <div class = "colors"  id = "colorlist"> Colors available and in stock: 
+         <select id = "colorselect">
+         </select>
+ 
+      </div>   
+    </form>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<!-- params.html 
+     The params function and a test driver for it.
+     This example illustrates function parameters
+     -->
+<html lang = "en">
+  <head> 
+    <title> Parameters </title>
+    <meta charset = "utf-8" />
+    <script type = "text/javascript">
+      <!--
+// Function params 
+// Parameters: two named parameters and one unnamed 
+//             parameter, all numbers
+// Returns: nothing
+
+      function params(a, b) {
+        document.write("Function params was passed ",
+            arguments.length, " parameter(s) <br />");
+        document.write("Parameter values are: <br />");
+
+        for (var arg = 0; arg < arguments.length; arg++)
+          document.write(arguments[arg], "<br />");
+
+        document.write("<br />");
+        }
+      // -->
+    </script>
+  </head>
+  <body>
+    <script type = "text/javascript">
+
+// A text driver for params
+
+      params("Mozart");
+      params("Mozart", "Beethoven");
+      params("Mozart", "Beethoven", "Tchaikowsky");
+    </script>
+  </body>
+</html>

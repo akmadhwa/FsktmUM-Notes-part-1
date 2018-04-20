@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- dynFont.html
+     Illustrates dynamic font styles and colors
+     -->
+<html lang = "en">
+  <head>
+    <title> Dynamic fonts </title>
+    <meta charset = "utf-8" />
+    <style type = "text/css">
+      .regText {font: 1.1em 'Times New Roman';}
+      .wordText {color: blue;}
+    </style>
+  </head>
+  <body>
+    <p class = "regText"> 
+      The state of 
+      <span class = "wordText";
+         onmouseover = "this.style.color = 'red'; 
+                        this.style.fontStyle = 'italic';
+                        this.style.fontSize = '2em';";
+         onmouseout = "this.style.color = 'blue';
+                       this.style.fontStyle = 'normal';
+                       this.style.fontSize = '1.1em';";>
+         Washington
+      </span>
+      produces many of our nation's apples. 
+    </p>
+  </body>
+</html>
+

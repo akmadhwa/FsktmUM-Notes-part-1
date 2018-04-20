@@ -1,0 +1,24 @@
+<!-- carsdata.html
+     Uses a form to collect a query against the cars
+     database.
+     Calls the PHP script, access_cars.php to perform
+     the given query and display the results
+    -->
+<html>
+  <head><title> Access to the cars database </title>
+  </head>
+  <body>
+    <p>
+      Please enter your query:
+      <br />
+      <form action  = "access_cars.php" method = "post">
+        <textarea  rows = "2"  cols = "80" name = "query" >
+        </textarea>
+        <br /><br />
+        <input type = "reset"  value = "Reset" />
+        <input type = "submit"  value = "Submit request" />
+      </form>    
+    </p>
+  </body>
+</html>
+

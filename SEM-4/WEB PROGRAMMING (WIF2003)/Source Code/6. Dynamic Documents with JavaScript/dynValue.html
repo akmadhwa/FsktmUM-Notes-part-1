@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- dynValue.html
+     Illustrates dynamic values
+     -->
+<html lang = "en">
+  <head>
+    <title> Dynamic values </title>
+    <meta charset = "utf-8" />
+    <script type = "text/javascript"  src = "dynValue.js" >
+    </script>
+    <style type = "text/css">
+      textarea {position: absolute; left: 250px; top: 0px;}
+      span {font-style: italic;}
+      p {font-weight: bold;}
+    </style>
+  </head>
+  <body>
+    <form action = "">
+      <p>
+        <span>
+          Customer information 
+        </span>
+        <br /><br />
+        <label>
+          Name: 
+          <input type = "text"  onmouseover = "messages(0)"
+                 onmouseout = "messages(4)" />
+        </label>
+        <br />
+        <label>
+          Email: 
+          <input type = "text"  onmouseover = "messages(1)"
+                 onmouseout = "messages(4)" />
+        </label>
+        <br /> <br />
+        <span>
+          To create an account, provide the following:
+        </span>
+        <br /> <br />
+        <label>
+          User ID: 
+          <input type = "text"  onmouseover = "messages(2)"
+                 onmouseout = "messages(4)" />
+        </label>
+        <br />
+        <label>
+          Password: 
+          <input type = "password" 
+                 onmouseover = "messages(3)"
+                 onmouseout = "messages(4)" />
+        </label>
+        <br />
+      </p>
+      <textarea id = "adviceBox"  rows = "3"  cols = "50">
+        This box provides advice on filling out the form
+        on this page. Put the mouse cursor over any input
+        field to get advice.
+      </textarea>
+      <br /><br />
+      <input type = "submit"  value = "Submit" />
+      <input type = "reset"  value = "Reset" />
+    </form>
+  </body>
+</html>

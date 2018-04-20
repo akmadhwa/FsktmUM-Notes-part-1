@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- moveText.html
+     Illustrates a moving text element
+     Uses the JavaScript from file moveText.js
+     -->
+<html lang = "en">
+  <head>
+    <title> Moving text </title>
+    <meta charset = "utf-8" />
+    <style type = "text/css">
+      #theText {position: absolute; left: 100px; top: 100px;
+                font: bold 1.7em 'Times Roman';
+                color: blue;"> Jump in the lake!;}
+    </style>
+    <script type = "text/javascript"  src = "moveText.js">
+    </script>
+  </head>
+
+<!-- Call the initializing function on load, giving the 
+      destination coordinates for the text to be moved
+      -->
+
+  <body onload = "initText()">
+
+<!-- The text to be moved -->
+    <p>
+      <span id = 'theText'> Jump in the lake!
+      </span>
+    </p>
+  </body>
+</html>

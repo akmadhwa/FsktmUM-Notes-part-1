@@ -1,0 +1,12 @@
+/* styles.css - an external style sheet
+     for use with fonts2.html
+   */
+  p.big {font-size: 14pt;
+         font-style: italic;
+         font-family: 'Times New Roman';
+        }
+  p.small {font: bold 10pt 'Courier New';} 
+  h2 {font-family: 'Times New Roman'; 
+      font-size: 24pt; font-weight: bold}
+  h3 {font-family: 'Courier New'; 
+      font-size: 18pt}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- dynColors.html
+     Illustrates dynamic foreground and background colors
+     -->
+<html lang = "en">
+  <head>
+    <title> Dynamic colors </title>
+    <meta charset = "utf-8" />
+    <script type = "text/javascript"  src = "dynColors.js" >
+    </script>
+  </head>
+  <body>
+    <p style = "font-family: Times; font-style: italic; 
+                font-size: 2em" > 
+      This small page illustrates dynamic setting of the
+      foreground and background colors for a document
+    </p>
+    <form action = "">
+      <p>
+        <label>
+          Background color: 
+          <input type = "text"  name = "background" size = "10"
+                 onchange = "setColor('background', this.value)" />
+        </label>
+        <br />
+        <label>
+          Foreground color: 
+          <input type = "text"  name = "foreground" size = "10"
+                 onchange = "setColor('foreground', this.value)" />
+        </label>
+        <br />
+      </p>
+    </form>
+  </body>
+</html>
