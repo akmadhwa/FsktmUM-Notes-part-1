@@ -1,7 +1,12 @@
-FsktmUM Notes
+FsktmUM Notes-Part-1
 ============================
 
 > Why you need to ask your friends for lecture notes.
+
+*This repo has been divided into two parts*
+
+* Part 1 -- Sem 1 - Sem 4
+* Part 2 -- Sem 5 - Sem 7
 
 ## File Strutcure
     .
